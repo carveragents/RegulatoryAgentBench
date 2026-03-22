@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "regulatory-agent-bench"
+version = "0.1.0"
+description = "Benchmark for evaluating AI agent responses to real-world regulatory change"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "litellm>=1.40.0",
+    "click>=8.1",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov",
+    "ruff",
+]
+
+[project.scripts]
+rab-run    = "run_simulation:cli"
+rab-report = "report:cli"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

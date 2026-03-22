@@ -1,0 +1,148 @@
+
+════════════════════════════════════════════════════════════════════════
+  AGGREGATE COMPARISON
+════════════════════════════════════════════════════════════════════════
+
+  Model         Pass%  P+Pa%  ActCov FactEx Deadline AvgMiss 
+  ───────────────────────────────────────────────────────────
+  gpt-5.4       64%    96%    87%    31%    98%      0.10    
+  gpt-5.4-mini  48%    94%    82%    26%    98%      0.20    
+  gpt-5-mini    74%    98%    94%    33%    96%      0.10    
+
+────────────────────────────────────────────────────────────────────────
+  PASS RATE BY DIFFICULTY
+
+  Model         Easy    Medium  Hard    
+  ──────────────────────────────────────
+  gpt-5.4       67%(15) 59%(17) 67%(18) 
+  gpt-5.4-mini  47%(15) 35%(17) 61%(18) 
+  gpt-5-mini    67%(15) 59%(17) 94%(18) 
+
+────────────────────────────────────────────────────────────────────────
+  MOST MISSED ACTION TYPES (top 5 per model)
+
+  gpt-5.4
+       6 12%    tech_data_change
+       5 10%    policy_change
+       4 8%     reporting_change
+       3 6%     other_change
+       1 2%     training_change
+
+  gpt-5.4-mini
+       8 16%    tech_data_change
+       5 10%    policy_change
+       5 10%    reporting_change
+       3 6%     acknowledge
+       3 6%     other_change
+
+  gpt-5-mini
+       5 10%    tech_data_change
+       3 6%     other_change
+       1 2%     process_change
+       1 2%     acknowledge
+
+────────────────────────────────────────────────────────────────────────
+  FAILURE DETAIL
+
+  gpt-5.4 — 2 failures
+    [E] OFAC Requests Comments on Rough Diamonds Regulations Collect
+         missing action : process_change
+         missing action : reporting_change
+    [E] CMA Auditor Registration Renewal - Database Update Required
+         critical miss  : registration_expiry_consequences
+         critical miss  : database_update_requirement
+
+  gpt-5.4-mini — 3 failures
+    [E] Alaska Insurance Reciprocal Jurisdiction Regulation Changes
+         missing action : reporting_change
+         missing action : tech_data_change
+         missing action : training_change
+    [E] OFAC Requests Comments on Rough Diamonds Regulations Collect
+         missing action : reporting_change
+         missing action : process_change
+         critical miss  : regulatory enforcement actions for non-compliance
+    [E] CMA Auditor Registration Renewal - Database Update Required
+         critical miss  : registration_expiry_consequences
+         critical miss  : database_update_requirement
+
+  gpt-5-mini — 1 failures
+    [E] CMA Auditor Registration Renewal - Database Update Required
+         critical miss  : registration_expiry_consequences
+         critical miss  : database_update_requirement
+
+
+────────────────────────────────────────────────────────────────────────
+  CONSENSUS FAILURES
+
+  All models FAILED          : 1
+  No model fully PASSED      : 10
+  Only one model passed      : 11
+
+  ALL MODELS FAILED (1 scenarios)
+
+  [E] CMA Auditor Registration Renewal - Database Update Required
+       gpt-5.4                                  FAIL
+       gpt-5.4-mini                             FAIL
+       gpt-5-mini                               FAIL
+
+  NO MODEL FULLY PASSED (9 scenarios)
+
+  [H] Australia OEI Registrar Draft CRIS Consultation - Fee Relief Meas
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [E] FTC Subpoena Motion Deadline Extended for Mercer
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [E] OFAC Requests Comments on Rough Diamonds Regulations Collection
+       gpt-5.4                                  FAIL
+       gpt-5.4-mini                             FAIL
+       gpt-5-mini                               PARTIAL
+
+  [M] BCRP Travel Authorization for International Workshop Compliance
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [M] Thailand Securities and Exchange Act B.E. 2535 Implementation
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [M] MIAX Futures Presidents Day Holiday Trading Hours Notification
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [M] ND Financial Institutions Bulletin: Applications & Usury Rate Jul
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  [E] Alaska Insurance Reciprocal Jurisdiction Regulation Changes
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             FAIL
+       gpt-5-mini                               PARTIAL
+
+  [M] Thailand Securities and Exchange Act B.E. 2535 Implementation
+       gpt-5.4                                  PARTIAL
+       gpt-5.4-mini                             PARTIAL
+       gpt-5-mini                               PARTIAL
+
+  ONLY ONE MODEL PASSED (11 scenarios)
+
+  [M] FCC Upper C-Band Comment Period Extension - Deadline Ma  <- only gpt-5-mini
+  [H] FDA Warning Letter for Unapproved COVID-19 Antiseptic C  <- only gpt-5-mini
+  [M] Multi-state enforcement order requires immediate money   <- only gpt-5.4
+  [H] Hawaii DOH $2.4M Wetlands Violation Fine and Corrective  <- only gpt-5-mini
+  [H] SEC Final Consent Judgment - Tadrus Securities Fraud En  <- only gpt-5-mini
+  [M] Colombia Central Bank Rate Hold & New Transaction Repor  <- only gpt-5-mini
+  [E] FHLBank Authority Limitation on Derivative Product Offe  <- only gpt-5.4
+  [E] FHFA Withdraws Proposed Rules on Liquidity, Governance,  <- only gpt-5-mini
+  [H] SEC Attorney Suspension - Compliance Response for Law F  <- only gpt-5-mini
+  [H] Florida OFR Issues 14 Immediate Final Orders Against Un  <- only gpt-5-mini
+  [M] Thailand SEC Act 1992: New Securities Business Licensin  <- only gpt-5.4
+

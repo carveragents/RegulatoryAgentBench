@@ -1,0 +1,12 @@
+# RegulatoryAgentBench — simulation repo
+# pip install -r requirements.txt
+
+# Core
+litellm>=1.40.0
+click>=8.1
+python-dotenv>=1.0
+
+# Dev / testing
+pytest>=8.0
+pytest-cov
+ruff

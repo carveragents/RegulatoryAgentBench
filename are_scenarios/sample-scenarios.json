@@ -1,0 +1,3967 @@
+{
+  "generated_at": "2026-03-22T16:10:34.874657+00:00",
+  "source_file": "data/selected_artifacts.json",
+  "model": "claude-sonnet-4-20250514",
+  "total_scenarios": 50,
+  "stats": {
+    "generated": 50,
+    "failed": 0,
+    "difficulty": {
+      "hard": 18,
+      "medium": 17,
+      "easy": 15,
+      "unknown": 0
+    },
+    "action_types": {
+      "process_change": 50,
+      "tech_data_change": 32,
+      "policy_change": 31,
+      "training_change": 11,
+      "reporting_change": 25,
+      "acknowledge": 4,
+      "escalate": 4,
+      "other_change": 3
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "9a052f77-adf8-42f8-937a-388cd3811037",
+      "title": "NCSC Critical Cisco Firewall Vulnerability Advisory Response",
+      "difficulty": "hard",
+      "tags": [
+        "vulnerability",
+        "cisco",
+        "firewall",
+        "patch_management",
+        "cybersecurity",
+        "netherlands"
+      ],
+      "regulatory_context": {
+        "regulator": "Netherlands Cyber Security Center",
+        "jurisdiction": [
+          "NL"
+        ],
+        "update_type": "advisory",
+        "published_date": "2026-03-04",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0076"
+      },
+      "situation": "The Dutch NCSC issued a high priority security advisory about two critical vulnerabilities (CVE-2026-20079 and CVE-2026-20131) in Cisco Secure Firewall Management Center that allow authentication bypass and remote code execution with root privileges. These vulnerabilities pose a high risk of unauthorized access and potential network compromise.",
+      "agent_task": "Determine immediate security response actions required for organizations using affected Cisco firewall products and establish appropriate patch management procedures.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement patch management process to apply Cisco updates immediately",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update Cisco Secure Firewall Management Center software to latest patched versions",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "CVE-2026-20079",
+          "CVE-2026-20131",
+          "authentication bypass",
+          "remote code execution",
+          "root privileges",
+          "Cisco Secure Firewall Management Center"
+        ],
+        "must_act_on": [
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "immediate patching requirement",
+          "root access vulnerability",
+          "network security compromise risk"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Failure to patch may lead to exploitation resulting in full device compromise, operational disruption, potential data breaches, and legal liability risks under Dutch law."
+      },
+      "metadata": {
+        "source_artifact_id": "9a052f77-adf8-42f8-937a-388cd3811037",
+        "generated_at": "2026-03-22T16:00:15.038124+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "1726d892-fd52-4bb3-9269-4920febb35f1",
+      "title": "Multi-State BSA/AML Enforcement: Block Inc. $80M Settlement Response",
+      "difficulty": "hard",
+      "tags": [
+        "BSA",
+        "AML",
+        "enforcement",
+        "money-transmitter",
+        "multistate-settlement"
+      ],
+      "regulatory_context": {
+        "regulator": "Office of the State Bank Commissioner Kansas",
+        "jurisdiction": [
+          "US-KS",
+          "US-AR",
+          "US-CA",
+          "US-MA",
+          "US-FL",
+          "US-ME",
+          "US-TX",
+          "US-WA"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-01-21",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://www.osbckansas.gov/kansas-joins-80-million-enforcement-action-against-block-inc-cash-app-for-bsa-aml-violations/"
+      },
+      "situation": "Kansas and 47 other states have taken enforcement action against Block, Inc. (Cash App) for Bank Secrecy Act and anti-money laundering violations, resulting in an $80 million penalty and mandatory program remediation. Block must engage an independent consultant to review its BSA/AML program and implement corrective measures within specified timeframes.",
+      "agent_task": "Assess the enforcement action's implications for your organization's BSA/AML compliance program and determine what immediate policy, process, and system changes are needed to prevent similar violations.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Strengthen BSA/AML compliance policies based on enforcement findings",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement enhanced due diligence and controls for high-risk accounts",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Enhance staff training on BSA/AML compliance requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Upgrade systems to support AML monitoring and reporting requirements",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "$80 million penalty",
+          "9-month consultant report deadline",
+          "12-month remediation period"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "9-month consultant report deadline",
+          "$80 million penalty",
+          "mandatory independent review requirement"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Block Inc. faces an $80 million financial penalty, mandatory independent review, and potential reputational damage from this multistate enforcement action."
+      },
+      "metadata": {
+        "source_artifact_id": "1726d892-fd52-4bb3-9269-4920febb35f1",
+        "generated_at": "2026-03-22T16:00:29.329484+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "c27e27b8-48c2-407c-8f45-e654277599fd",
+      "title": "PCAOB Terminates Bar - Supervised Reinstatement Compliance Required",
+      "difficulty": "hard",
+      "tags": [
+        "PCAOB",
+        "enforcement",
+        "supervision",
+        "compliance",
+        "accounting",
+        "bar_termination"
+      ],
+      "regulatory_context": {
+        "regulator": "Public Company Accounting Oversight Board",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2026-01-27",
+        "effective_date": "2026-01-27",
+        "compliance_deadline": "2027-01-27",
+        "source_url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/enforcement/petitions/documents/105-2026-003-keyes.pdf?sfvrsn=74017d84_2"
+      },
+      "situation": "The PCAOB lifted the bar on Brandon R. Keyes, allowing him to associate with Richey, May & Co., LLP under mandatory supervision conditions for one year. The firm must implement strict supervisory processes and compliance certification requirements.",
+      "agent_task": "Determine what compliance obligations the firm must implement for the supervised reinstatement and identify critical deadlines for certification and reporting.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement supervision and compliance certification processes for the reinstated individual",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submit compliance certification and additional evidence to PCAOB Division",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "policy_change",
+          "description": "Notify PCAOB Division if supervisor changes and suggest acceptable replacement",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2027-01-27",
+          "one year supervision period",
+          "compliance certification deadline",
+          "supervisory requirements"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "policy_change"
+        ],
+        "must_not_miss": [
+          "2027-01-27",
+          "further disciplinary action",
+          "reinstatement of bar"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "policy_change"
+        ],
+        "key_deadline": "2027-01-27",
+        "penalty_summary": "Continued non-compliance with supervision and certification requirements may result in further disciplinary action by PCAOB, including potential reinstatement of the bar."
+      },
+      "metadata": {
+        "source_artifact_id": "c27e27b8-48c2-407c-8f45-e654277599fd",
+        "generated_at": "2026-03-22T16:00:42.180939+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "4eef2287-dcdb-4860-b10c-0dd6b4e09091",
+      "title": "Colombia Central Bank Rate Hold & New Transaction Reporting Deadline",
+      "difficulty": "medium",
+      "tags": [
+        "Monetary Policy",
+        "Interest Rate",
+        "Financial Reporting",
+        "Colombia",
+        "Central Bank"
+      ],
+      "regulatory_context": {
+        "regulator": "Banco de la República",
+        "jurisdiction": [
+          "CO"
+        ],
+        "update_type": "other",
+        "published_date": "2024-04-05",
+        "effective_date": "2025-05-02",
+        "compliance_deadline": "2025-12-01",
+        "source_url": "https://www.banrep.gov.co/es/podcast/episodio-13-mercado-laboral-colombiano"
+      },
+      "situation": "Colombia's central bank maintains the benchmark interest rate at 9.25% effective May 2, 2025, while establishing new reporting deadlines for financial transaction information. Financial institutions must submit their Informe de Movimientos for October 2025 by December 1, 2025.",
+      "agent_task": "Determine the compliance actions required for the maintained interest rate and new transaction reporting deadline. Assess system and process changes needed to meet regulatory requirements.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Maintain monetary policy interest rate at 9.25%",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes to meet new reporting deadlines for transaction reports",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submit Informe de Movimientos for October 2025 by December 1, 2025",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to support timely transmission of transaction reports and monitor interest rate changes",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-12-01 compliance deadline",
+          "9.25% interest rate",
+          "Informe de Movimientos reporting requirement"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2025-12-01 compliance deadline",
+          "regulatory sanctions for non-compliance with reporting deadlines"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2025-12-01",
+        "penalty_summary": "Non-compliance with reporting deadlines may result in regulatory sanctions and reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "4eef2287-dcdb-4860-b10c-0dd6b4e09091",
+        "generated_at": "2026-03-22T16:00:52.578937+00:00",
+        "language": [
+          "es"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "dcd23078-cbc3-4a8e-a501-ff60997b347b",
+      "title": "Thailand SEC Act 1992: New Securities Business Licensing Requirements",
+      "difficulty": "medium",
+      "tags": [
+        "securities",
+        "licensing",
+        "Thailand",
+        "SEC",
+        "regulatory_framework"
+      ],
+      "regulatory_context": {
+        "regulator": "The Securities and Exchange Commission, Thailand",
+        "jurisdiction": [
+          "TH"
+        ],
+        "update_type": "advisory",
+        "published_date": "1992-03-16",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://web-invpublic.sec.or.th/e/3538/2568"
+      },
+      "situation": "Thailand has enacted the Securities and Exchange Act B.E. 2535 (1992), establishing a comprehensive regulatory framework for securities activities. The Act introduces mandatory licensing requirements for all securities business operations and creates new compliance obligations under SEC oversight.",
+      "agent_task": "The compliance team must assess the impact of the new Securities and Exchange Act and implement necessary changes to ensure legal operation of securities business activities in Thailand.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Adoption of SEC rules, regulations, and notifications",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implementation of licensing, approval, and supervisory procedures",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Obligation to submit financial and operational reports to SEC",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Systems to support compliance with SEC reporting and licensing requirements",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "Securities and Exchange Act B.E. 2535 (1992)",
+          "licensing requirements",
+          "SEC regulatory framework"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "Legal penalties for operating without license",
+          "Licensing requirement for securities business activities"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Legal penalties for operating without license or non-compliance with SEC regulations, plus potential reputational damage from enforcement actions."
+      },
+      "metadata": {
+        "source_artifact_id": "dcd23078-cbc3-4a8e-a501-ff60997b347b",
+        "generated_at": "2026-03-22T16:01:02.496388+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "f4e2bc44-80aa-4946-9c6d-3de63b6e71d0",
+      "title": "Alaska Insurance Reciprocal Jurisdiction Regulation Changes",
+      "difficulty": "easy",
+      "tags": [
+        "reciprocal_jurisdiction",
+        "insurance_regulation",
+        "reinsurance",
+        "naic",
+        "alaska",
+        "public_comment"
+      ],
+      "regulatory_context": {
+        "regulator": "Alaska Division of Insurance",
+        "jurisdiction": [
+          "US-AK"
+        ],
+        "update_type": "proposed rule",
+        "published_date": "2022-09-23",
+        "effective_date": "2021-12-23",
+        "compliance_deadline": null,
+        "source_url": "https://www.commerce.alaska.gov/web/Portals/11/Pub/PublicNotice_09.23.2022.pdf"
+      },
+      "situation": "Alaska Division of Insurance proposed amendments to 3 AAC 21.659 regarding reciprocal jurisdictions to align with NAIC standards and covered agreements. The changes include new definitions, expanded director authority over assuming insurers, and clarification of reinsurance agreement renegotiation rights.",
+      "agent_task": "Determine required compliance actions for the proposed regulation changes and ensure timely participation in the comment period before November 1, 2022.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal policies to reflect amended definitions and director's authority regarding assuming insurers",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes to collect and submit required information to the director as per amended regulation",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train relevant staff on new regulatory definitions and compliance requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Adjust reporting to include financial documentation accepted by the director or NAIC as required",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to track and manage lists of assuming insurers and related documentation per new regulatory requirements",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "comment deadline November 1, 2022",
+          "hearing date October 25, 2022",
+          "new definitions for reciprocal jurisdiction and covered agreement"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2022-11-01",
+          "loss of credit for reinsurance agreements"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2022-11-01",
+        "penalty_summary": "Non-compliance may result in loss of credit for reinsurance agreements, impacting financial and regulatory standing."
+      },
+      "metadata": {
+        "source_artifact_id": "f4e2bc44-80aa-4946-9c6d-3de63b6e71d0",
+        "generated_at": "2026-03-22T16:01:14.848651+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "02541e11-78f4-4cae-bf95-e44d610ddccf",
+      "title": "NH Executive Orders Rescinded - Update Governance Processes",
+      "difficulty": "medium",
+      "tags": [
+        "executive_order",
+        "rescission",
+        "governance",
+        "state_government",
+        "new_hampshire"
+      ],
+      "regulatory_context": {
+        "regulator": "STATE OF NEW HAMPSHIRE OFFICE OF THE GOVERNOR",
+        "jurisdiction": [
+          "US-NH"
+        ],
+        "update_type": "final rule",
+        "published_date": "2024-12-20",
+        "effective_date": "2024-12-20",
+        "compliance_deadline": null,
+        "source_url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/sununu-2024-03.pdf"
+      },
+      "situation": "New Hampshire Governor Christopher T. Sununu issued Executive Order 2024-03, rescinding multiple executive orders issued between 2003 and 2023, effective immediately on December 20, 2024. This rescission removes outdated administrative directives to provide clarity and allow the incoming administration to address issues without legacy constraints.",
+      "agent_task": "The agent must identify the immediate impact of the rescinded executive orders and determine what governance and compliance process updates are needed to reflect these changes.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Rescission of multiple executive orders",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Update internal governance and compliance processes to reflect rescinded orders",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "immediate effective date of 2024-12-20",
+          "rescission of executive orders from 2003-2023"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change"
+        ],
+        "must_not_miss": [
+          "immediate effective date",
+          "governance process updates required"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change"
+        ],
+        "key_deadline": "2024-12-20",
+        "penalty_summary": "Non-compliance may result in legal and administrative confusion or challenges within state governance."
+      },
+      "metadata": {
+        "source_artifact_id": "02541e11-78f4-4cae-bf95-e44d610ddccf",
+        "generated_at": "2026-03-22T16:01:25.295124+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "dccdbd79-339d-48b2-92c7-bfe75dd793bd",
+      "title": "Central Bank Travel Authorization Extension - Internal Compliance",
+      "difficulty": "easy",
+      "tags": [
+        "travel_authorization",
+        "board_resolution",
+        "central_bank",
+        "expense_approval",
+        "internal_governance"
+      ],
+      "regulatory_context": {
+        "regulator": "Banco Central de Reserva del Perú",
+        "jurisdiction": [
+          "PE"
+        ],
+        "update_type": "other",
+        "published_date": "2025-09-19",
+        "effective_date": "2025-09-04",
+        "compliance_deadline": null,
+        "source_url": "https://www.bcrp.gob.pe/docs/Transparencia/Normas-Legales/Resoluciones-Directorio/2025/rd-0054-2025-bcrp-n.pdf"
+      },
+      "situation": "The Central Bank of Peru has extended the authorized overseas mission of General Manager Paul Gonzalo Castillo Bardalez from September 4 to September 13, 2025, due to a force majeure event. The board resolution also approved additional travel expenses totaling US$ 2,101.24.",
+      "agent_task": "Determine what internal compliance actions are required following this board resolution modification and ensure proper implementation of the updated travel authorization.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Modify internal authorization and travel approval processes to reflect extended travel dates and expenses",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "acknowledge",
+          "description": "Ensure updated resolution is published and communicated internally",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "extended travel dates from September 4 to September 13, 2025",
+          "additional expenses of US$ 2,101.24",
+          "force majeure justification"
+        ],
+        "must_act_on": [
+          "process_change",
+          "acknowledge"
+        ],
+        "must_not_miss": [
+          "internal authorization procedure updates",
+          "administrative sanctions risk"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "acknowledge"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Non-compliance with internal authorization procedures may lead to administrative sanctions or financial irregularities."
+      },
+      "metadata": {
+        "source_artifact_id": "dccdbd79-339d-48b2-92c7-bfe75dd793bd",
+        "generated_at": "2026-03-22T16:01:37.974056+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 7
+      }
+    },
+    {
+      "scenario_id": "c6250e3f-9ccc-4a07-a1f2-e4e079f990b3",
+      "title": "SEC Withdraws Shareholder Proposal Rule Changes Under Exchange Act 14a-8",
+      "difficulty": "easy",
+      "tags": [
+        "SEC",
+        "shareholder proposals",
+        "Exchange Act",
+        "rule withdrawal",
+        "compliance"
+      ],
+      "regulatory_context": {
+        "regulator": "Securities and Exchange Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "final rule",
+        "published_date": "2025-06-12",
+        "effective_date": "2025-06-17",
+        "compliance_deadline": null,
+        "source_url": "https://www.sec.gov/rules-regulations/2025/06/substantial-implementation-duplication-resubmission-shareholder-proposals-under-exchange-act-rule#33-11377final"
+      },
+      "situation": "The SEC has withdrawn multiple proposed rules from 2020-2023 concerning substantial implementation, duplication, and resubmission of shareholder proposals under Exchange Act Rule 14a-8. This withdrawal means these specific regulatory changes will not be finalized, reducing immediate compliance risk but requiring ongoing monitoring for future SEC actions.",
+      "agent_task": "The agent must recognize this rule withdrawal and determine what policy and training updates are needed while establishing ongoing monitoring processes for future SEC proposals.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Revise internal policies to reflect withdrawal of proposed rules and maintain current compliance practices",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Update training materials to reflect withdrawal and absence of new rules",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Monitor SEC communications for any future proposals on this topic",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-06-17 effective date",
+          "withdrawal of proposed rules",
+          "no new compliance requirements"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "training_change",
+          "process_change"
+        ],
+        "must_not_miss": [
+          "effective date",
+          "need for ongoing monitoring"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "training_change",
+          "process_change"
+        ],
+        "key_deadline": "2025-06-17",
+        "penalty_summary": "No new penalties arise from withdrawn proposals, but failure to monitor future SEC proposals could lead to delayed compliance readiness."
+      },
+      "metadata": {
+        "source_artifact_id": "c6250e3f-9ccc-4a07-a1f2-e4e079f990b3",
+        "generated_at": "2026-03-22T16:01:47.179597+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "aad03d9e-028b-4a2e-8284-152a8301d7d3",
+      "title": "ASIC Sues Interprac: Major Financial Advice Compliance Failures",
+      "difficulty": "hard",
+      "tags": [
+        "Financial Advice",
+        "Superannuation",
+        "Compliance Failure",
+        "Risk Management",
+        "Civil Penalty",
+        "Financial Services Licence",
+        "Best Interests Obligation",
+        "ASIC Enforcement"
+      ],
+      "regulatory_context": {
+        "regulator": "Australian Securities and Investments Commission",
+        "jurisdiction": [
+          "AU"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-11-12",
+        "effective_date": "2025-05-31",
+        "compliance_deadline": null,
+        "source_url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-274mr-asic-sues-interprac-over-alleged-shield-and-first-guardian-licensee-failures/"
+      },
+      "situation": "ASIC has commenced civil penalty proceedings against Interprac Financial Planning for failing to ensure authorised representatives complied with best interests obligations and for inadequate risk management systems concerning Shield and First Guardian Master Fund investments. The failures impacted thousands of clients and hundreds of millions in superannuation investments, with both funds now terminated or in liquidation.",
+      "agent_task": "Assess the enforcement action implications for financial planning firms and determine what immediate compliance actions must be taken to address similar licensee oversight and risk management failures.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Revise product approval and compliance oversight policies",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Enhance risk management and client consent processes; improve complaint handling",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Increase transparency and reporting on product approvals and compliance issues",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to track approved product lists and client consent records accurately",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "escalate",
+          "description": "Respond to ASIC proceedings and implement corrective actions as ordered by the court",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date: 2025-05-31",
+          "civil penalties under sections 961L and 912A(5A)",
+          "potential business restrictions",
+          "best interests obligations compliance"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "escalate"
+        ],
+        "must_not_miss": [
+          "2025-05-31",
+          "civil penalties and potential business restrictions"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "escalate"
+        ],
+        "key_deadline": "2025-05-31",
+        "penalty_summary": "Civil penalties under Corporations Act sections 961L and 912A(5A), potential court orders restraining financial services business, and costs payable to ASIC."
+      },
+      "metadata": {
+        "source_artifact_id": "aad03d9e-028b-4a2e-8284-152a8301d7d3",
+        "generated_at": "2026-03-22T16:01:56.628802+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "81363270-f105-4afe-8835-6880461bfa99",
+      "title": "Multi-State BSA/AML Enforcement Action Against Block Inc. Compliance Response",
+      "difficulty": "hard",
+      "tags": [
+        "BSA",
+        "AML",
+        "enforcement",
+        "money-transmission",
+        "compliance-remediation",
+        "multistate"
+      ],
+      "regulatory_context": {
+        "regulator": "Office of the State Bank Commissioner Kansas",
+        "jurisdiction": [
+          "US-KS",
+          "US-AR",
+          "US-CA",
+          "US-MA",
+          "US-FL",
+          "US-ME",
+          "US-TX",
+          "US-WA"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-01-21",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://osbckansas.gov/kansas-joins-80-million-enforcement-action-against-block-inc-cash-app-for-bsa-aml-violations/"
+      },
+      "situation": "Kansas and 47 other states have taken enforcement action against Block, Inc. (Cash App) for Bank Secrecy Act and anti-money laundering violations, resulting in an $80 million penalty and mandated compliance remediation. Block must engage an independent consultant to review its BSA/AML program and submit a report within nine months, followed by 12 months to correct identified deficiencies.",
+      "agent_task": "Determine the compliance actions required for money transmitters and financial firms to avoid similar BSA/AML enforcement. Identify key remediation steps and timeline requirements that similar firms should implement.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Enhance BSA/AML compliance policies based on enforcement findings",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement improved customer due diligence and suspicious activity monitoring processes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submit independent consultant report within nine months timeframe",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Upgrade systems to support enhanced AML controls and reporting capabilities",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "$80 million penalty",
+          "nine months report deadline",
+          "12 months remediation deadline",
+          "independent consultant requirement"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "nine months report deadline",
+          "12 months remediation deadline",
+          "$80 million penalty"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Financial penalty of $80 million with requirement to remediate compliance deficiencies and potential reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "81363270-f105-4afe-8835-6880461bfa99",
+        "generated_at": "2026-03-22T16:02:17.316455+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "8f82a51c-c1ac-48df-83ba-5dcab9155178",
+      "title": "SEC Attorney Suspension - Compliance Response for Law Firm",
+      "difficulty": "hard",
+      "tags": [
+        "SEC",
+        "attorney suspension",
+        "securities law",
+        "enforcement",
+        "legal compliance"
+      ],
+      "regulatory_context": {
+        "regulator": "Securities and Exchange Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2020-02-07",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://www.sec.gov/files/litigation/admin/2020/34-88155.pdf"
+      },
+      "situation": "The SEC has temporarily suspended attorney Randall Goulding from practicing before the Commission due to violations of the Investment Advisers Act. The suspension becomes effective upon service and becomes permanent unless a petition is filed within 30 days.",
+      "agent_task": "Determine immediate compliance actions required for a law firm that may have employed this attorney for SEC matters and ensure proper response procedures are followed.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Review and update attorney eligibility procedures for SEC practice to prevent similar violations",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Establish monitoring process for attorney suspension orders and petition deadlines",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "escalate",
+          "description": "Immediately notify senior management and affected clients of attorney's suspension status",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "30-day petition deadline",
+          "temporary suspension status",
+          "potential permanent suspension",
+          "Investment Advisers Act violations"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "escalate"
+        ],
+        "must_not_miss": [
+          "30-day petition deadline",
+          "reputational damage risk",
+          "client notification requirement"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "escalate"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Temporary suspension from SEC practice that becomes permanent if no petition filed within 30 days, plus reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "8f82a51c-c1ac-48df-83ba-5dcab9155178",
+        "generated_at": "2026-03-22T16:02:28.686691+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "cda1ca4e-c8a5-41d9-bd7f-9919ea7898cd",
+      "title": "ND Financial Institutions Bulletin: Applications & Usury Rate July 2025",
+      "difficulty": "medium",
+      "tags": [
+        "branch_application",
+        "merger",
+        "name_waiver",
+        "usury_rate",
+        "financial_institutions",
+        "north_dakota"
+      ],
+      "regulatory_context": {
+        "regulator": "Department of Financial Institutions",
+        "jurisdiction": [
+          "US-ND",
+          "US-MN",
+          "US-AZ",
+          "US-MT",
+          "US-NY"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2025-07-01",
+        "effective_date": "2025-07-01",
+        "compliance_deadline": null,
+        "source_url": "https://www.nd.gov/dfi/sites/www/files/documents/Monthly%20Bulletins/2025/06.2025.pdf"
+      },
+      "situation": "North Dakota's Department of Financial Institutions published its July 2025 bulletin detailing multiple applications for branch establishments, mergers, and name waivers, with some approvals granted. The bulletin also sets the usury rate for unregulated lenders at 9.622% for July 2025.",
+      "agent_task": "The agent must identify all application status changes affecting operational permissions and ensure compliance with the new usury rate requirement. The agent should determine what system updates and process changes are needed.",
+      "required_actions": [
+        {
+          "action_type": "other_change",
+          "description": "Monitor and apply the updated usury rate for unregulated lenders effective July 2025",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Update internal tracking and approval processes for branch applications, mergers, and name waivers",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to reflect new branch locations, merger statuses, and approved trade names",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "usury rate of 9.622%",
+          "branch establishment approvals",
+          "merger applications",
+          "name waiver requests"
+        ],
+        "must_act_on": [
+          "other_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "usury rate compliance requirement",
+          "regulatory penalties for non-compliance with application approvals"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "other_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Potential regulatory penalties for operating without approved branch or merger status and financial/reputational risk from non-compliance with usury rate limits."
+      },
+      "metadata": {
+        "source_artifact_id": "cda1ca4e-c8a5-41d9-bd7f-9919ea7898cd",
+        "generated_at": "2026-03-22T16:02:39.789367+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "fd9c86fa-ca12-4462-af28-41492e8ec70f",
+      "title": "FCA enforcement: John Wood Group fined £13M for misleading statements",
+      "difficulty": "medium",
+      "tags": [
+        "enforcement",
+        "financial_penalty",
+        "misleading_disclosure",
+        "listing_rules",
+        "financial_reporting"
+      ],
+      "regulatory_context": {
+        "regulator": "Financial Conduct Authority",
+        "jurisdiction": [
+          "GB"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2026-03-04",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://www.fca.org.uk/news/press-releases/fca-fines-john-wood-group-plc-issuing-misleading-statements"
+      },
+      "situation": "The FCA imposed a £12,993,700 fine on John Wood Group PLC for publishing misleading financial statements in FY22, FY23, and HY24 results and maintaining inadequate internal controls. This enforcement action demonstrates the regulatory consequences of poor financial culture and highlights ongoing scrutiny of listed companies' disclosure practices.",
+      "agent_task": "Assess the compliance implications of this enforcement action and determine what preventive measures your organization must implement to avoid similar violations of Listing Rules 1.3.3R and Listing Principle 1.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Enhance policies to ensure accuracy and transparency in financial reporting",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement robust controls and procedures for accounting judgements and financial disclosures",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train staff on compliance with accounting standards and regulatory requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Upgrade systems to support accurate financial data capture and reporting",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "£12,993,700 penalty amount",
+          "Listing Rule 1.3.3R violation",
+          "misleading financial statements",
+          "inadequate internal controls"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "£12,993,700 financial penalty",
+          "reputational damage with 78% share price fall"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Financial penalty of £12,993,700 imposed with potential for £18,562,500 without early resolution discount, plus severe reputational damage including 78% share price fall and share suspension."
+      },
+      "metadata": {
+        "source_artifact_id": "fd9c86fa-ca12-4462-af28-41492e8ec70f",
+        "generated_at": "2026-03-22T16:02:50.701297+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "f8c4489c-1cc0-4aee-bae8-2195683560da",
+      "title": "Mortgage Loan Originator License Denial - Process Update Required",
+      "difficulty": "easy",
+      "tags": [
+        "mortgage_licensing",
+        "license_denial",
+        "administrative_process",
+        "alabama_banking"
+      ],
+      "regulatory_context": {
+        "regulator": "Alabama State Banking Department",
+        "jurisdiction": [
+          "US-AL"
+        ],
+        "update_type": "other",
+        "published_date": "2015-09-04",
+        "effective_date": "2015-09-04",
+        "compliance_deadline": null,
+        "source_url": "https://banking.alabama.gov/wp-content/uploads/2023/06/ChristopherPatrickMoseleyDenialOrderesigned10_5_15.pdf"
+      },
+      "situation": "The Alabama State Banking Department denied a Mortgage Loan Originator license application for failure to request an administrative hearing within the required timeframe. This case establishes the importance of proper notification procedures and hearing rights in the licensing denial process.",
+      "agent_task": "The agent must identify the procedural requirements for license denials and determine what process changes are needed to ensure proper notification of applicant rights.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement process to notify applicants of denial and hearing rights within 20 days",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "20-day hearing request deadline",
+          "immediate effective date",
+          "notification requirements"
+        ],
+        "must_act_on": [
+          "process_change"
+        ],
+        "must_not_miss": [
+          "hearing rights notification procedure",
+          "20-day deadline requirement"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change"
+        ],
+        "key_deadline": "2015-09-24",
+        "penalty_summary": "Denial of license prevents applicant from legally operating as a mortgage loan originator in Alabama."
+      },
+      "metadata": {
+        "source_artifact_id": "f8c4489c-1cc0-4aee-bae8-2195683560da",
+        "generated_at": "2026-03-22T16:03:05.439386+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 7
+      }
+    },
+    {
+      "scenario_id": "7f0bd248-cf47-4e2d-87b3-a82c39b65f5f",
+      "title": "BCRP Travel Authorization for International Workshop Compliance",
+      "difficulty": "medium",
+      "tags": [
+        "international_travel",
+        "expense_authorization",
+        "central_bank",
+        "BIS_workshop",
+        "institutional_policy"
+      ],
+      "regulatory_context": {
+        "regulator": "Banco Central de Reserva del Perú",
+        "jurisdiction": [
+          "PE"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2025-08-19",
+        "effective_date": "2025-09-29",
+        "compliance_deadline": "2025-10-03",
+        "source_url": "https://www.bcrp.gob.pe/docs/Transparencia/Normas-Legales/Resoluciones-Directorio/2025/rd-0045-2025-bcrp-n.pdf"
+      },
+      "situation": "The Central Bank of Peru has authorized international travel for a senior specialist to attend a BIS Portfolio Analytics Workshop from September 29 to October 3, 2025. The resolution approves travel expenses of US$2,249.24 and establishes specific requirements for compliance with institutional travel policies.",
+      "agent_task": "The agent must identify the travel authorization requirements and implement the necessary process changes to ensure compliance with the institutional travel policy and expense payment procedures.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement travel authorization and expense payment process for international mission",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Ensure staff are updated on international obligations and operational policies",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-10-03",
+          "US$2249.24",
+          "Ricardo Rafael Zárate Aima",
+          "BIS Portfolio Analytics Workshop"
+        ],
+        "must_act_on": [
+          "process_change",
+          "training_change"
+        ],
+        "must_not_miss": [
+          "2025-10-03",
+          "institutional policy adherence",
+          "financial accountability"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "training_change"
+        ],
+        "key_deadline": "2025-10-03",
+        "penalty_summary": "Non-compliance could affect institutional policy adherence and financial accountability."
+      },
+      "metadata": {
+        "source_artifact_id": "7f0bd248-cf47-4e2d-87b3-a82c39b65f5f",
+        "generated_at": "2026-03-22T16:03:14.459564+00:00",
+        "language": [
+          "es"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "6ae6bcd6-3db7-4831-b12e-c4ebac3bded4",
+      "title": "OFAC Requests Comments on Rough Diamonds Regulations Collection",
+      "difficulty": "easy",
+      "tags": [
+        "OFAC",
+        "rough diamonds",
+        "comment period",
+        "information collection",
+        "Treasury"
+      ],
+      "regulatory_context": {
+        "regulator": "Office of Foreign Assets Control",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "comment request",
+        "published_date": "2024-10-16",
+        "effective_date": null,
+        "compliance_deadline": "2024-12-16",
+        "source_url": "https://ofac.treasury.gov/media/933496/download?inline"
+      },
+      "situation": "OFAC has requested public comments on its information collection requirements under the Rough Diamonds Control Regulations, with a comment deadline of December 16, 2024. The agency is also renewing the IRS Advisory Council charter as part of ongoing compliance with the Paperwork Reduction Act.",
+      "agent_task": "The agent must identify the comment submission deadline and determine whether the organization should participate in the public comment process for OFAC's Rough Diamonds Control Regulations.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Submit comments by December 16, 2024 regarding OFAC's Rough Diamonds Control Regulations information collection if organization is impacted",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Continue using Form 2587 for Special Enrollment Examination applications as no changes were announced to existing reporting requirements",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "December 16, 2024 comment deadline",
+          "OFAC Rough Diamonds Control Regulations",
+          "information collection requirements"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change"
+        ],
+        "must_not_miss": [
+          "2024-12-16",
+          "regulatory enforcement actions for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change"
+        ],
+        "key_deadline": "2024-12-16",
+        "penalty_summary": "Failure to comply with OFAC reporting requirements may result in regulatory enforcement actions."
+      },
+      "metadata": {
+        "source_artifact_id": "6ae6bcd6-3db7-4831-b12e-c4ebac3bded4",
+        "generated_at": "2026-03-22T16:03:23.778613+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "0d06fd1c-9672-4e7a-9dd8-3d47ba8af88c",
+      "title": "Delaware Regulation 603 Final Rule - Statutory Reference Corrections",
+      "difficulty": "easy",
+      "tags": [
+        "auto_insurance",
+        "statutory_reference",
+        "form_updates",
+        "delaware",
+        "regulation_603"
+      ],
+      "regulatory_context": {
+        "regulator": "Delaware Department of Insurance",
+        "jurisdiction": [
+          "US-DE"
+        ],
+        "update_type": "final rule",
+        "published_date": "2022-11-01",
+        "effective_date": "2022-11-11",
+        "compliance_deadline": null,
+        "source_url": "https://regulations.delaware.gov/register/november2022/final/26%20DE%20Reg%20398%2011-01-22.htm"
+      },
+      "situation": "Delaware has issued a final exempt order updating Regulation 603 under the Delaware Motorists Protection Act to correct erroneous statutory cross references and make stylistic changes. While the changes are non-substantive, insurers must ensure compliance with the updated regulation and proper use of revised Form A for coverage elections.",
+      "agent_task": "Determine what specific actions are required for compliance with the updated Regulation 603 and ensure proper implementation of corrected references and Form A usage.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal policies to reflect corrected statutory references and stylistic changes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Ensure use and presentation of revised Form A for coverage election as required",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update document templates and systems to incorporate corrected references and revised Form A",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date: 2022-11-11",
+          "revised Form A requirement",
+          "statutory reference corrections"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "effective_date: 2022-11-11",
+          "regulatory enforcement consequences"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2022-11-11",
+        "penalty_summary": "Non-compliance may result in regulatory enforcement actions by the Delaware Department of Insurance and potential reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "0d06fd1c-9672-4e7a-9dd8-3d47ba8af88c",
+        "generated_at": "2026-03-22T16:03:33.436380+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "29954495-f59f-412c-b2b2-71f336a41bba",
+      "title": "SEC Final Consent Judgment - Tadrus Securities Fraud Enforcement",
+      "difficulty": "hard",
+      "tags": [
+        "securities_fraud",
+        "investment_adviser",
+        "consent_judgment",
+        "disgorgement",
+        "asset_freeze",
+        "officer_bar",
+        "sec_enforcement"
+      ],
+      "regulatory_context": {
+        "regulator": "U.S. Securities and Exchange Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-12-17",
+        "effective_date": "2025-12-12",
+        "compliance_deadline": null,
+        "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26447"
+      },
+      "situation": "The SEC obtained a final consent judgment against Mina Tadrus for fraudulent securities and investment advisory activities, imposing permanent injunctions, officer-and-director bars, and ordering disgorgement of $4,070,350 plus interest. The enforcement action demonstrates heightened regulatory scrutiny of fraudulent investment schemes and reinforces compliance obligations under securities laws.",
+      "agent_task": "The agent must identify the specific compliance implications of this enforcement action and determine what operational controls and legal coordination actions are required to prevent similar violations.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement controls to prevent fraudulent investment solicitations and misappropriation of investor funds",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Systems must track and freeze assets as ordered; ensure compliance with injunctions and asset transfer instructions",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "escalate",
+          "description": "Coordination with legal and law enforcement for asset transfers and compliance with court orders",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "disgorgement amount of $4,070,350",
+          "permanent injunctions against securities fraud",
+          "officer-and-director bar",
+          "effective date of 2025-12-12"
+        ],
+        "must_act_on": [
+          "process_change",
+          "tech_data_change",
+          "escalate"
+        ],
+        "must_not_miss": [
+          "permanent injunctions",
+          "disgorgement obligations",
+          "asset freeze requirements"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "tech_data_change",
+          "escalate"
+        ],
+        "key_deadline": "2025-12-12",
+        "penalty_summary": "Permanent injunctions against securities violations, officer-and-director bar, disgorgement of $4,070,350 plus interest, and mandatory asset transfers for restitution."
+      },
+      "metadata": {
+        "source_artifact_id": "29954495-f59f-412c-b2b2-71f336a41bba",
+        "generated_at": "2026-03-22T16:03:43.543381+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "8ca23f62-91f8-42f6-9a9f-a8f28277700f",
+      "title": "CIMA Cancels Fund Registration for Reporting and Fee Non-Compliance",
+      "difficulty": "hard",
+      "tags": [
+        "mutual funds",
+        "registration cancellation",
+        "regulatory enforcement",
+        "compliance failure",
+        "cayman islands"
+      ],
+      "regulatory_context": {
+        "regulator": "Cayman Islands Monetary Authority",
+        "jurisdiction": [
+          "KY"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-10-07",
+        "effective_date": "2025-10-07",
+        "compliance_deadline": null,
+        "source_url": "https://www.cima.ky/upimages/noticedoc/EXTRACT-DecisionNotice-DelphinCaribbeanResilienceFundL.P_1760556734.pdf"
+      },
+      "situation": "CIMA has cancelled the registration of Delphin Caribbean Resilience Fund L.P. for failing to submit audited accounts for financial years 2020-2024 and non-payment of annual fees and penalties for 2025. The cancellation prohibits the Fund from operating legally and poses significant operational and reputational risks.",
+      "agent_task": "Determine the immediate compliance actions required following this enforcement decision and assess available legal remedies for the Fund operators.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement timely submission of audited accounts and payment of fees to avoid future breaches",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Ensure compliance with statutory reporting deadlines for audited accounts",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "escalate",
+          "description": "Consider legal appeal process under section 36 of the Mutual Funds Act if disputing the decision",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "registration cancellation effective 2025-10-07",
+          "right to appeal to Grand Court",
+          "loss of legal authority to operate"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "escalate"
+        ],
+        "must_not_miss": [
+          "cancellation of registration",
+          "loss of legal authority to operate",
+          "right to appeal decision to Grand Court"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "escalate"
+        ],
+        "key_deadline": "2025-10-07",
+        "penalty_summary": "Registration cancelled under section 30(3)(a) of Mutual Funds Act with loss of legal authority to operate and potential reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "8ca23f62-91f8-42f6-9a9f-a8f28277700f",
+        "generated_at": "2026-03-22T16:03:53.890930+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "11d0ce9c-8ae1-41f7-9f23-55cd83c1cf2a",
+      "title": "Idaho COVID-19 health insurance waiver implementation",
+      "difficulty": "hard",
+      "tags": [
+        "COVID-19",
+        "telehealth",
+        "provider_restrictions",
+        "health_insurance",
+        "regulatory_waiver",
+        "emergency_response"
+      ],
+      "regulatory_context": {
+        "regulator": "State of Idaho Department of Insurance",
+        "jurisdiction": [
+          "US-ID"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2020-04-06",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://doi.idaho.gov/displaypdf/?id=7752"
+      },
+      "situation": "Idaho DOI issued Bulletin 20-03 providing temporary regulatory waivers for health insurance carriers during the COVID-19 emergency, allowing expanded telehealth services and waiving certain provider restrictions. The bulletin permits carriers to waive deductibles for COVID-19 care and use non-HIPAA compliant communication platforms for telehealth when necessary.",
+      "agent_task": "Determine what policy and operational changes must be implemented to comply with the temporary regulatory waivers and ensure proper claims processing adjustments.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Implement temporary waivers for provider restrictions and cost-sharing for COVID-19 related care",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Adjust claims processing to accommodate waived deductibles and telehealth coverage",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Enable use of non-HIPAA compliant communication platforms for telehealth where necessary",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "emergency proclamation duration",
+          "telehealth coverage requirements",
+          "provider restriction waivers"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "emergency proclamation duration",
+          "no enforcement actions for Idaho Code section 41-348(2)"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "No enforcement actions will be pursued for violations of Idaho Code section 41-348(2) related to medically necessary COVID-19 claims during the emergency period"
+      },
+      "metadata": {
+        "source_artifact_id": "11d0ce9c-8ae1-41f7-9f23-55cd83c1cf2a",
+        "generated_at": "2026-03-22T16:04:03.719416+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "7175b5c7-7eaa-4970-a43f-1e12d4a492c5",
+      "title": "Guernsey Anti-Greenwashing Guidance Implementation",
+      "difficulty": "medium",
+      "tags": [
+        "Anti-Greenwashing",
+        "Sustainability Reporting",
+        "Corporate Governance",
+        "Environmental Risk",
+        "GFSC"
+      ],
+      "regulatory_context": {
+        "regulator": "Guernsey Financial Services Commission",
+        "jurisdiction": [
+          "GG"
+        ],
+        "update_type": "guidance",
+        "published_date": "2025-12-09",
+        "effective_date": "2026-02-01",
+        "compliance_deadline": null,
+        "source_url": "https://www.gfsc.gg/sites/default/files/media/helix-file/Feedback%20Statement%20-%20Anti-Greenwashing%20Guidance%20and%20changes%20to%20Code%20of%20Corporate%20Governance.pdf"
+      },
+      "situation": "The Guernsey Financial Services Commission has introduced new Anti-Greenwashing Guidance applicable to all licensed persons and amended the Finance Sector Code of Corporate Governance to require boards to consider environmental sustainability risks including climate change and biodiversity. Material breaches may result in serious regulatory sanctions.",
+      "agent_task": "The agent must identify the required policy, process, and training changes needed to comply with the new anti-greenwashing requirements and environmental risk governance obligations by the February 2026 effective date.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal policies to incorporate Anti-Greenwashing Guidance and environmental sustainability risk considerations in governance",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes to review and ensure accuracy and fairness of sustainability-related communications; integrate environmental risk assessment into board risk oversight",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train relevant staff on Anti-Greenwashing expectations and environmental risk considerations in governance and communications",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Where appropriate, make timely climate change related disclosures as judged by the board",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective date of 2026-02-01",
+          "regulatory sanctions for material breaches",
+          "requirements for environmental sustainability risk governance"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "reporting_change"
+        ],
+        "must_not_miss": [
+          "2026-02-01 effective date",
+          "regulatory sanctions for material breaches"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "reporting_change"
+        ],
+        "key_deadline": "2026-02-01",
+        "penalty_summary": "Material breaches of Anti-Greenwashing provisions may lead to serious regulatory sanctions and reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "7175b5c7-7eaa-4970-a43f-1e12d4a492c5",
+        "generated_at": "2026-03-22T16:04:14.959067+00:00",
+        "language": [
+          "English"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "fa72232e-dd40-407d-b03d-cb622bea340c",
+      "title": "Thailand Securities and Exchange Act B.E. 2535 Implementation",
+      "difficulty": "medium",
+      "tags": [
+        "securities",
+        "exchange",
+        "licensing",
+        "Thailand",
+        "SEC",
+        "regulatory-framework"
+      ],
+      "regulatory_context": {
+        "regulator": "The Securities and Exchange Commission, Thailand",
+        "jurisdiction": [
+          "TH"
+        ],
+        "update_type": "other",
+        "published_date": "1992-03-16",
+        "effective_date": "1992-05-15",
+        "compliance_deadline": null,
+        "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=195&NewsYear=2025"
+      },
+      "situation": "Thailand has enacted the Securities and Exchange Act B.E. 2535 establishing the legal framework for securities regulation and creating the Securities and Exchange Commission. The Act defines securities business types, licensing requirements, and regulatory oversight powers that will impact all entities involved in securities business in Thailand.",
+      "agent_task": "The agent must identify the key regulatory changes and determine what actions securities businesses must take to comply with the new Securities and Exchange Act framework.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Implementation of policies by SEC to regulate securities and related businesses",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Application and notification procedures for licenses and approvals",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Obligations to comply with SEC notifications and reporting requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Systems to manage licensing, approvals, and compliance monitoring may be required",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date",
+          "licensing requirements",
+          "SEC establishment",
+          "securities business regulation"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "effective_date",
+          "licensing and approval required to operate securities business",
+          "legal consequences for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "1992-05-15",
+        "penalty_summary": "Non-compliance may lead to refusal of license applications, legal consequences, and loss of license under the Act and SEC regulations."
+      },
+      "metadata": {
+        "source_artifact_id": "fa72232e-dd40-407d-b03d-cb622bea340c",
+        "generated_at": "2026-03-22T16:04:33.212111+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "89743340-af48-4efe-ad79-2bf24d83aa31",
+      "title": "SEC Media Subpoena Policy - Staff Training and Compliance Implementation",
+      "difficulty": "easy",
+      "tags": [
+        "subpoena",
+        "media",
+        "first_amendment",
+        "enforcement",
+        "policy_statement",
+        "SEC"
+      ],
+      "regulatory_context": {
+        "regulator": "Securities and Exchange Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "guidance",
+        "published_date": "2006-04-12",
+        "effective_date": "2006-04-12",
+        "compliance_deadline": null,
+        "source_url": "https://www.sec.gov/files/rules/policy/2006/34-53638.pdf"
+      },
+      "situation": "The SEC has issued a new policy statement establishing guidelines for issuing subpoenas to news media members, requiring staff to balance enforcement needs with First Amendment protections. The policy introduces new procedural requirements including seeking alternative sources, obtaining proper authorization, and narrowly tailoring subpoenas.",
+      "agent_task": "The agent must identify the new procedural requirements and determine what actions are needed to ensure SEC staff compliance with the media subpoena policy.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Implement new subpoena issuance policy for media members with authorization and negotiation requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Establish new procedural steps for subpoena issuance including authorization from Division of Enforcement Director and General Counsel consultation",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train SEC staff on new subpoena policy and First Amendment considerations for media interactions",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date: 2006-04-12",
+          "authorization requirements",
+          "First Amendment protections",
+          "negotiation requirements"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change"
+        ],
+        "must_not_miss": [
+          "disciplinary action consequences",
+          "authorization from Division of Enforcement Director"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Failure to follow policy may result in disciplinary action against SEC staff and potential reputational harm to SEC."
+      },
+      "metadata": {
+        "source_artifact_id": "89743340-af48-4efe-ad79-2bf24d83aa31",
+        "generated_at": "2026-03-22T16:04:43.567204+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "6ed50d70-9a5c-4c00-8d81-628dd8a23040",
+      "title": "FCC Repeals 21 Obsolete Public Safety Rules - Update Compliance Systems",
+      "difficulty": "medium",
+      "tags": [
+        "Public Safety",
+        "Homeland Security",
+        "Rule Repeal",
+        "Regulatory Modernization",
+        "FCC",
+        "Telecommunications"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Communications Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "final rule",
+        "published_date": "2025-11-24",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://www.fcc.gov/document/fcc-deletes-outdated-public-safety-rules"
+      },
+      "situation": "The FCC has repealed approximately 21 obsolete public safety and homeland security rule provisions across multiple parts of Title 47 CFR. The rules become effective 60 days after Federal Register publication unless significant adverse comments are received within 20 days of publication.",
+      "agent_task": "The agent must identify all necessary compliance updates and system changes required due to the rule repeals. It must determine what internal processes, reporting obligations, and technology systems need to be updated to reflect the removal of these outdated requirements.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal policies to reflect repeal of obsolete public safety and homeland security rules",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Adjust internal compliance processes to reflect removal of outdated rules",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Discontinue compliance reporting obligations related to repealed rules",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update technology systems and databases to remove references and compliance checks related to repealed rules",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "20-day comment period",
+          "60-day effectiveness period",
+          "rule repeals across CFR parts 0, 4, 9, 10, 11, and 90"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "Federal Register publication monitoring",
+          "comment deadline tracking"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Non-compliance with updated rules may lead to regulatory enforcement actions and potential reputational risk."
+      },
+      "metadata": {
+        "source_artifact_id": "6ed50d70-9a5c-4c00-8d81-628dd8a23040",
+        "generated_at": "2026-03-22T16:04:53.312714+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "2a7bb58b-e8de-4a9a-8265-21cd287d3cd4",
+      "title": "FTC Subpoena Motion Deadline Extended for Mercer",
+      "difficulty": "easy",
+      "tags": [
+        "FTC",
+        "subpoena",
+        "deadline_extension",
+        "motion_to_quash",
+        "adjudicative_proceeding"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Trade Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "other",
+        "published_date": "2025-12-04",
+        "effective_date": null,
+        "compliance_deadline": "2025-12-19",
+        "source_url": "https://www.ftc.gov/system/files/ftc_gov/pdf/614390.2025.12.04_mercer_unopposed_motion_for_extension.pdf"
+      },
+      "situation": "The FTC has granted Mercer (US) LLC an extension to file motions to limit or quash subpoenas from December 4, 2025 to December 19, 2025 in an ongoing adjudicative proceeding. This extension was unopposed and allows additional time for negotiation and document production.",
+      "agent_task": "The agent must identify the new compliance deadline and update internal processes to ensure Mercer meets the extended deadline for filing any motions related to subpoenas.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Extend internal deadlines for motions related to subpoenas accordingly",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "other_change",
+          "description": "Continue negotiations to narrow or limit subpoena disputes",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-12-19 compliance deadline",
+          "extension from December 4 to December 19",
+          "FTC adjudicative proceeding"
+        ],
+        "must_act_on": [
+          "process_change",
+          "other_change"
+        ],
+        "must_not_miss": [
+          "2025-12-19 compliance deadline",
+          "adverse legal consequences for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "other_change"
+        ],
+        "key_deadline": "2025-12-19",
+        "penalty_summary": "Failure to comply with subpoena deadlines or motions could result in adverse legal consequences in the FTC adjudicative proceeding."
+      },
+      "metadata": {
+        "source_artifact_id": "2a7bb58b-e8de-4a9a-8265-21cd287d3cd4",
+        "generated_at": "2026-03-22T16:05:04.036689+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 7
+      }
+    },
+    {
+      "scenario_id": "3ced1ed2-5cf4-49b9-adca-e01db57efb8e",
+      "title": "Republic Mortgage Guaranty Insurance Corp Name Change & Inactive Status",
+      "difficulty": "easy",
+      "tags": [
+        "Company Name Change",
+        "License Status",
+        "Merger",
+        "Inactive Status",
+        "Regulatory Update"
+      ],
+      "regulatory_context": {
+        "regulator": "Missouri Department of Insurance",
+        "jurisdiction": [
+          "US-NC"
+        ],
+        "update_type": "other",
+        "published_date": "2025-06-01",
+        "effective_date": "2017-10-16",
+        "compliance_deadline": "2025-06-01",
+        "source_url": "https://insurance.mo.gov/insurance-company/republic-mortgage-guaranty-insurance-corporation?topic&wrapped=true"
+      },
+      "situation": "Republic Mortgage Insurance Company of North Carolina changed its name to Republic Mortgage Guaranty Insurance Corporation effective October 16, 2017. The company's status changed from suspended to inactive effective June 1, 2025, following its merger into United Guaranty Residential Insurance Company.",
+      "agent_task": "The agent must identify the company name change and status update, then determine what record updates and system modifications are required.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Update internal records and systems to reflect name and status changes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Update regulatory filings to reflect new company name and status",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Modify databases to update company name and status fields",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-06-01",
+          "name change effective 2017-10-16",
+          "status change to inactive",
+          "merger with United Guaranty Residential Insurance Company"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2025-06-01",
+          "potential regulatory non-compliance if changes not updated"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2025-06-01",
+        "penalty_summary": "Potential regulatory non-compliance if company name and status changes are not updated in filings and systems, leading to reputational risk."
+      },
+      "metadata": {
+        "source_artifact_id": "3ced1ed2-5cf4-49b9-adca-e01db57efb8e",
+        "generated_at": "2026-03-22T16:05:13.662739+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 7
+      }
+    },
+    {
+      "scenario_id": "d4fcd46a-1019-4921-94c1-7af6ab3b8c09",
+      "title": "Florida OFR Issues 14 Immediate Final Orders Against Unauthorized Banks",
+      "difficulty": "hard",
+      "tags": [
+        "immediate_final_order",
+        "unauthorized_banking",
+        "florida",
+        "financial_regulation",
+        "cease_and_desist",
+        "bank_charter",
+        "consumer_protection"
+      ],
+      "regulatory_context": {
+        "regulator": "Office of Financial Regulation",
+        "jurisdiction": [
+          "US-FL"
+        ],
+        "update_type": "final rule",
+        "published_date": "2022-01-07",
+        "effective_date": "2022-01-07",
+        "compliance_deadline": "2022-01-07",
+        "source_url": "https://flofr.gov/news/details/ofr-issues-14-immediate-final-orders"
+      },
+      "situation": "The Florida Office of Financial Regulation issued 14 immediate final orders against entities falsely marketing banking services without proper Florida bank charters or registrations. These entities must immediately cease and desist all unauthorized banking activities to protect consumers from financial harm.",
+      "agent_task": "The agent must identify the immediate compliance requirements for financial institutions and implement enhanced verification processes to prevent unauthorized banking activities.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Enforce stricter verification of entity registration and charter status before marketing banking services",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement monitoring and investigation processes to identify unauthorized banking activities",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Report unauthorized entities to regulatory authorities promptly",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Maintain updated databases of authorized financial institutions and monitor websites for false claims",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "immediate effective date",
+          "felony of the third degree penalty",
+          "requirement for proper Florida bank charter or registration"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2022-01-07 compliance deadline",
+          "felony penalties for unauthorized banking activities"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2022-01-07",
+        "penalty_summary": "Felony of the third degree for unauthorized banking activities with potential financial penalties and legal action."
+      },
+      "metadata": {
+        "source_artifact_id": "d4fcd46a-1019-4921-94c1-7af6ab3b8c09",
+        "generated_at": "2026-03-22T16:05:22.777409+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "6a8213fe-2432-4d75-8e1e-2b15365f1d01",
+      "title": "FDA CGMP Violations Response - Fulijaya Manufacturing Warning Letter",
+      "difficulty": "hard",
+      "tags": [
+        "CGMP",
+        "Data Integrity",
+        "Laboratory Controls",
+        "Stability Testing",
+        "FDA Warning Letter",
+        "Pharmaceutical Manufacturing",
+        "Corrective Action",
+        "Risk Assessment"
+      ],
+      "regulatory_context": {
+        "regulator": "United States Food and Drug Administration",
+        "jurisdiction": [
+          "MY",
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2026-01-14",
+        "effective_date": null,
+        "compliance_deadline": "2026-02-04",
+        "source_url": "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/fulijaya-manufacturing-sdn-bhd-719172-01142026"
+      },
+      "situation": "FDA issued a warning letter to Fulijaya Manufacturing SDN. BHD. identifying multiple CGMP violations including incomplete laboratory records, inadequate laboratory controls, and insufficient stability testing. The violations compromise drug safety and quality, with potential consequences including refusal of product admission into the US market.",
+      "agent_task": "Determine the required remediation actions and develop a comprehensive response plan to address all CGMP violations within the FDA's specified timeframe.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Revise laboratory data recording, testing, and stability assessment processes; implement CAPA plans",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "policy_change",
+          "description": "Implement updated stability testing procedures and laboratory control policies",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Provide detailed investigation reports, risk assessments, and CAPA plans to FDA within 15 working days",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Ensure data integrity systems and record-keeping are compliant with CGMP requirements",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "15 working days response deadline",
+          "CGMP violations",
+          "data integrity failures",
+          "stability testing deficiencies"
+        ],
+        "must_act_on": [
+          "process_change",
+          "policy_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2026-02-04 compliance deadline",
+          "potential refusal of product admission into US market",
+          "requirement for qualified CGMP consultant"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "policy_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2026-02-04",
+        "penalty_summary": "Non-compliance may result in withholding approval for new applications, refusal of product admission into the US, and potential product recalls."
+      },
+      "metadata": {
+        "source_artifact_id": "6a8213fe-2432-4d75-8e1e-2b15365f1d01",
+        "generated_at": "2026-03-22T16:05:38.439501+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "2956faf0-f0fc-42f8-95fa-cb2a541b12fa",
+      "title": "Australia OEI Registrar Draft CRIS Consultation - Fee Relief Measures",
+      "difficulty": "hard",
+      "tags": [
+        "cost_recovery",
+        "offshore_electricity_infrastructure",
+        "fee_relief",
+        "consultation",
+        "australia"
+      ],
+      "regulatory_context": {
+        "regulator": "Australian Government Department of Industry, Science and Resources Offshore Infrastructure Registrar",
+        "jurisdiction": [
+          "AU"
+        ],
+        "update_type": "comment request",
+        "published_date": "2025-02-20",
+        "effective_date": "2025-11-14",
+        "compliance_deadline": "2027-06-30",
+        "source_url": "https://www.nopta.gov.au/media/news/2026/oei-cris-consult-review-feedback.html"
+      },
+      "situation": "Australia's Offshore Infrastructure Registrar has released a draft Cost Recovery Implementation Statement proposing temporary fee and levy relief for offshore electricity infrastructure participants. The consultation seeks feedback on measures including waived annual levies for feasibility licenses, halved levies for transmission licenses, and reduced application fees, all effective until June 30, 2027.",
+      "agent_task": "The compliance agent must assess the proposed changes, identify applicable fee relief measures for the organization's offshore electricity infrastructure activities, and ensure timely submission of consultation feedback by the February 20, 2026 deadline.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal fee budgeting and payment policies to reflect temporary relief measures for applicable license types",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Modify fee and levy collection processes to account for waived and reduced payments during relief period",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update financial systems to apply correct waived and reduced fees for specified license types and periods",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Prepare consultation response detailing organizational feedback on proposed fee relief measures",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "consultation deadline 2026-02-20",
+          "relief period ends 2027-06-30",
+          "fee reductions for research licenses from $300,000 to $20,000",
+          "levy waivers for feasibility licenses"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "reporting_change"
+        ],
+        "must_not_miss": [
+          "2026-02-20 consultation deadline",
+          "2027-06-30 relief expiry",
+          "regulatory enforcement consequences"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "reporting_change"
+        ],
+        "key_deadline": "2026-02-20",
+        "penalty_summary": "Non-compliance with fee and levy payments may result in regulatory enforcement actions with potential financial and reputational consequences."
+      },
+      "metadata": {
+        "source_artifact_id": "2956faf0-f0fc-42f8-95fa-cb2a541b12fa",
+        "generated_at": "2026-03-22T16:05:53.900929+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "6d62ea20-cf30-4baf-b208-8ff5e6f9f593",
+      "title": "FDIC extends FFIEC 009/009a reporting requirements with comment concerns",
+      "difficulty": "medium",
+      "tags": [
+        "FFIEC 009",
+        "FFIEC 009a",
+        "Country Exposure Report",
+        "Banking Regulation",
+        "Regulatory Reporting",
+        "International Banks",
+        "Prudential Standards"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Deposit Insurance Corporation",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "comment request",
+        "published_date": "2025-08-21",
+        "effective_date": null,
+        "compliance_deadline": "2025-09-22",
+        "source_url": "https://fdic.gov/federal-register-publications/comments-omb-3064-0017-august-21-2025"
+      },
+      "situation": "FDIC has extended the FFIEC 009 and FFIEC 009a Country Exposure Report collections for three years without revision. However, a comment letter raised concerns about securities financing transactions treatment and the use of FFIEC 009 data in regulatory categorization that could impact banking organizations' prudential standards classification.",
+      "agent_task": "The agent must assess the implications of the FFIEC 009/009a extension and the raised concerns, then determine what actions are needed to maintain compliance and address potential regulatory categorization impacts.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Maintain and ensure accurate quarterly reporting of FFIEC 009 and FFIEC 009a data; consider potential future revisions based on comment outcomes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Continue submission of FFIEC 009 and FFIEC 009a reports quarterly; monitor for any updates or clarifications",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Ensure systems capture and report required data accurately, including potential adjustments for securities financing transactions collateral treatment as highlighted in comments",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2025-09-22 comment deadline",
+          "quarterly reporting requirement",
+          "securities financing transactions concerns",
+          "regulatory categorization impact"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2025-09-22",
+          "regulatory sanctions for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2025-09-22",
+        "penalty_summary": "Non-compliance with reporting requirements may result in regulatory sanctions, increased supervisory scrutiny, and reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "6d62ea20-cf30-4baf-b208-8ff5e6f9f593",
+        "generated_at": "2026-03-22T16:06:07.620055+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "526fe969-2faa-4d93-8a64-4e8abc952cb5",
+      "title": "FTC Permanent Injunction Against Debt Collection Company",
+      "difficulty": "medium",
+      "tags": [
+        "debt_collection",
+        "consumer_protection",
+        "ftc_enforcement",
+        "permanent_injunction",
+        "monetary_judgment"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Trade Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2021-09-27",
+        "effective_date": "2021-09-27",
+        "compliance_deadline": null,
+        "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3192-critical-resolution-mediation-llc"
+      },
+      "situation": "The FTC obtained a permanent injunction banning Critical Resolution Mediation LLC and associated individuals from debt collection activities due to unlawful practices including misrepresentations and misuse of customer information. A monetary judgment of $3,010,123.65 was imposed jointly and severally against defendants.",
+      "agent_task": "Determine if this enforcement action creates compliance obligations for your debt collection company and identify any immediate actions required to avoid similar violations.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Review and update policies to prohibit misrepresentations regarding legal obligations, attorney affiliations, refund policies, and material facts about services",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Establish processes to respond to FTC information requests within 14 days and securely destroy customer data upon regulatory direction",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Implement secure customer data destruction capabilities within 30 days upon FTC instruction",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train staff on prohibited misrepresentation practices and proper customer information handling procedures",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "monetary judgment amount of $3,010,123.65",
+          "permanent ban on debt collection activities",
+          "prohibition on misrepresentations"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "training_change"
+        ],
+        "must_not_miss": [
+          "permanent industry ban penalty",
+          "significant monetary judgment"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "training_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Permanent ban from debt collection industry and monetary judgment of $3,010,123.65 for unlawful debt collection practices."
+      },
+      "metadata": {
+        "source_artifact_id": "526fe969-2faa-4d93-8a64-4e8abc952cb5",
+        "generated_at": "2026-03-22T16:06:18.681979+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "bf395088-5dd6-40e0-8ca8-3e8161aceca9",
+      "title": "SC Admissions Tax Timing Clarification for Advance Ticket Sales",
+      "difficulty": "easy",
+      "tags": [
+        "admissions_tax",
+        "advance_ticket_sales",
+        "gift_certificates",
+        "tax_reporting",
+        "south_carolina"
+      ],
+      "regulatory_context": {
+        "regulator": "South Carolina Department of Revenue",
+        "jurisdiction": [
+          "US-SC"
+        ],
+        "update_type": "guidance",
+        "published_date": "2026-01-20",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://dor.sc.gov/index.php/admissions-tax-paid-admissions-advance-ticket-sales"
+      },
+      "situation": "South Carolina clarified that admissions tax for advance ticket sales must be reported in the month the ticketed event occurs, not when tickets are sold. This also applies to gift certificate redemptions which are reported when the event takes place.",
+      "agent_task": "The agent must identify the required changes to admissions tax reporting timing and determine what process, reporting, and system modifications are needed to ensure compliance.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Adjust timing of admissions tax reporting and remittance to align with event dates or payment dates as specified",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Modify admissions tax returns to report revenue in the month the event occurs or payment is received",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update tax reporting systems to track event dates and link ticket sales or gift certificate redemptions accordingly",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "guidance clarifies reporting timing for advance ticket sales",
+          "tax reported in month of event not sale",
+          "applies to gift certificate redemptions"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "potential financial penalties for incorrect reporting timing"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Potential financial penalties and reputational damage for failure to remit admissions tax in the correct reporting period."
+      },
+      "metadata": {
+        "source_artifact_id": "bf395088-5dd6-40e0-8ca8-3e8161aceca9",
+        "generated_at": "2026-03-22T16:06:30.215387+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "bdad63b0-bfad-4348-a9ea-1cff696692e4",
+      "title": "MIAX Futures Presidents Day Holiday Trading Hours Notification",
+      "difficulty": "medium",
+      "tags": [
+        "holiday_hours",
+        "trading_schedule",
+        "miax_futures",
+        "cftc",
+        "exchange_closure"
+      ],
+      "regulatory_context": {
+        "regulator": "Commodity Futures Trading Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2026-02-19",
+        "effective_date": "2026-02-09",
+        "compliance_deadline": null,
+        "source_url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationRules/59734"
+      },
+      "situation": "MIAX Futures Exchange will be closed on Sunday, February 15, 2026, for the Monday, February 16, 2026 trade date in observance of Presidents Day. Market participants and clearing members need to be informed of this holiday trading schedule change to manage their trading and clearing activities accordingly.",
+      "agent_task": "The agent must identify the holiday closure dates and determine what actions are required to communicate this schedule change to relevant stakeholders and update operational systems.",
+      "required_actions": [
+        {
+          "action_type": "other_change",
+          "description": "Communicate holiday schedule to market participants and clearing members",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Adjust trading and clearing processes to accommodate holiday schedule",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update trading system calendars and alerts to reflect holiday closure",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "exchange closure on February 15, 2026",
+          "Presidents Day trade date February 16, 2026",
+          "normal trading on February 13 and 17, 2026"
+        ],
+        "must_act_on": [
+          "other_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "February 15, 2026 closure date",
+          "operational disruption risk"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "other_change",
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2026-02-15",
+        "penalty_summary": "Potential operational disruption and reputational risk if market participants are not properly informed of holiday trading hours."
+      },
+      "metadata": {
+        "source_artifact_id": "bdad63b0-bfad-4348-a9ea-1cff696692e4",
+        "generated_at": "2026-03-22T16:06:42.421231+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "eb17365d-e6c4-409e-9699-2604778ab2de",
+      "title": "CMA Auditor Registration Renewal - Database Update Required",
+      "difficulty": "easy",
+      "tags": [
+        "auditor_registration",
+        "database_update",
+        "cma_kuwait",
+        "registration_renewal"
+      ],
+      "regulatory_context": {
+        "regulator": "Capital Markets Authority",
+        "jurisdiction": [
+          "KW"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2025-10-16",
+        "effective_date": "2025-12-20",
+        "compliance_deadline": null,
+        "source_url": "https://www.cma.gov.kw/en/web/cma/cma-board-releases/-/cmaboardreleases/detail/1732834"
+      },
+      "situation": "The Kuwait CMA has renewed auditor registration for Mr. Faisal Saqer Al Saqer for three years starting December 20, 2025. The organization must update its auditor registration systems and processes to reflect this renewal.",
+      "agent_task": "Determine what system updates and process changes are needed to reflect the auditor's registration renewal and ensure compliance with CMA requirements.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Update auditor registration records and renewal processes to reflect the new registration period",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update registration databases to reflect renewal and new registration expiry date",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date_2025-12-20",
+          "three_year_renewal_period",
+          "auditor_name_faisal_saqer_al_saqer"
+        ],
+        "must_act_on": [
+          "process_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "registration_expiry_consequences",
+          "database_update_requirement"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2025-12-20",
+        "penalty_summary": "Non-compliance with registration renewal may lead to loss of authorization to act as auditor under CMA regulations, with potential reputational and operational consequences."
+      },
+      "metadata": {
+        "source_artifact_id": "eb17365d-e6c4-409e-9699-2604778ab2de",
+        "generated_at": "2026-03-22T16:06:52.470406+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "6d18e860-78cd-4089-bd20-83d1b42a5594",
+      "title": "FHFA Withdraws Proposed Rules on Liquidity, Governance, and Credit Limits",
+      "difficulty": "easy",
+      "tags": [
+        "rule_withdrawal",
+        "FHFA",
+        "liquidity_requirements",
+        "governance",
+        "credit_limits",
+        "regulatory_monitoring"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Housing Finance Agency",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "proposed rule",
+        "published_date": "2025-10-02",
+        "effective_date": "2025-10-02",
+        "compliance_deadline": null,
+        "source_url": "https://www.fhfa.gov/regulation/federal-register/rin-2590-ab09-rin-2590-ab24-and-rin-2590-ab41"
+      },
+      "situation": "FHFA has formally withdrawn three previously published proposed rules relating to Enterprise Liquidity Requirements, Federal Home Loan Bank System governance, and credit limits. The agency no longer intends to issue final rules based on these proposals and will pursue future regulatory actions through new proposed rules if needed.",
+      "agent_task": "Determine how this withdrawal affects current compliance obligations and establish monitoring procedures for potential future regulatory developments in these areas.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Confirm that existing policies related to the withdrawn proposals remain in place with no new policy implementations required",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Establish monitoring process for any future new proposed rules in liquidity, governance, and credit limit areas",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "withdrawal of three proposed rules",
+          "no new regulatory obligations from withdrawn proposals",
+          "future rules will be new proposals"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change"
+        ],
+        "must_not_miss": [
+          "monitoring requirement for future developments",
+          "confirmation that existing policies remain unchanged"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "No penalties arise from withdrawn proposals, but potential reputational risk if future regulatory developments are not monitored."
+      },
+      "metadata": {
+        "source_artifact_id": "6d18e860-78cd-4089-bd20-83d1b42a5594",
+        "generated_at": "2026-03-22T16:07:03.837270+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "a6414d8c-52a4-48d3-b3fb-16f3bb541ac1",
+      "title": "Michigan DIFS Insurance License Revocation for Fraud",
+      "difficulty": "hard",
+      "tags": [
+        "license_revocation",
+        "fraud",
+        "enforcement",
+        "insurance",
+        "michigan_difs"
+      ],
+      "regulatory_context": {
+        "regulator": "Michigan Department of Insurance and Financial Services",
+        "jurisdiction": [
+          "US-MI"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2026-02-23",
+        "effective_date": "2026-02-23",
+        "compliance_deadline": "2026-02-23",
+        "source_url": "https://www.michigan.gov/difs/-/media/Project/Websites/difs/DO/2026/February/Stephan_Naamo_25-18763.pdf?rev=38a25e782c274a9ba25f3276776274bf"
+      },
+      "situation": "Michigan DIFS has revoked an insurance licensee's license effective immediately due to fraudulent practices, misrepresentation, and dishonest conduct in obtaining the license. The order prohibits the individual from reapplying for any DIFS-administered license and establishes consequences for non-compliance.",
+      "agent_task": "Analyze this enforcement action and determine what compliance measures must be implemented to prevent similar fraudulent licensing practices and ensure organizational adherence to Michigan Insurance Code requirements.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement controls to prevent fraudulent licensing practices",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "acknowledge",
+          "description": "Prohibition on reapplying for license administered by Michigan DIFS",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2026-02-23",
+          "immediate compliance requirement",
+          "license revocation",
+          "prohibition on reapplication"
+        ],
+        "must_act_on": [
+          "process_change",
+          "acknowledge"
+        ],
+        "must_not_miss": [
+          "2026-02-23",
+          "revocation of insurance license",
+          "prohibition from reapplying for license",
+          "potential additional disciplinary proceedings"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "acknowledge"
+        ],
+        "key_deadline": "2026-02-23",
+        "penalty_summary": "Revocation of insurance license, prohibition from reapplying for any DIFS license, and potential additional disciplinary proceedings for violations."
+      },
+      "metadata": {
+        "source_artifact_id": "a6414d8c-52a4-48d3-b3fb-16f3bb541ac1",
+        "generated_at": "2026-03-22T16:07:13.972460+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "0f658ea1-1303-4ea4-8870-cc47be826084",
+      "title": "Hawaii DOH $2.4M Wetlands Violation Fine and Corrective Action Required",
+      "difficulty": "hard",
+      "tags": [
+        "environmental",
+        "wetlands",
+        "water_pollution",
+        "enforcement",
+        "corrective_action",
+        "hawaii"
+      ],
+      "regulatory_context": {
+        "regulator": "Hawaiʻi Department of Health",
+        "jurisdiction": [
+          "US-HI"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-10-14",
+        "effective_date": "2025-10-06",
+        "compliance_deadline": "2026-01-04",
+        "source_url": "https://health.hawaii.gov/news/newsroom/doh-issues-2-4-million-fine-to-wailehua-i-llc-for-unauthorized-discharge-into-wetlands-a-critical-environmental-resource/"
+      },
+      "situation": "Hawaii DOH issued a Notice of Violation and Order against Wailehua I, LLC for illegal discharge of soil and construction materials into wetlands without permits, imposing a $2.4 million fine. The company must immediately cease unauthorized discharges, remove all fill material within 90 days, and implement a comprehensive Corrective Action Plan.",
+      "agent_task": "Determine immediate compliance actions required for the wetlands violation and ensure all deadlines are met to avoid additional penalties up to $60,000 per day.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Development and implementation of Corrective Action Plan for wetland restoration",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submission of Corrective Action Plan and final restoration report to DOH",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Maintain documentation and certification of compliance and corrective actions",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "policy_change",
+          "description": "Adherence to Hawaii Water Pollution Rules and Regulations",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2026-01-04 compliance deadline",
+          "$2.4 million penalty amount",
+          "90-day removal requirement",
+          "potential $60,000 daily fines"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "policy_change"
+        ],
+        "must_not_miss": [
+          "2026-01-04 compliance deadline",
+          "$2.4 million administrative penalty",
+          "potential daily fines up to $60,000 per violation day"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "policy_change"
+        ],
+        "key_deadline": "2026-01-04",
+        "penalty_summary": "Monetary penalty of $2.4 million with potential daily fines up to $60,000 per violation day if non-compliance continues."
+      },
+      "metadata": {
+        "source_artifact_id": "0f658ea1-1303-4ea4-8870-cc47be826084",
+        "generated_at": "2026-03-22T16:07:23.612129+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "cf95ec5d-03b2-42d6-be02-29e3fc39c0be",
+      "title": "NCUA Issues Prohibition Order Against Credit Union Employee",
+      "difficulty": "hard",
+      "tags": [
+        "NCUA",
+        "prohibition_order",
+        "credit_union",
+        "misconduct",
+        "enforcement"
+      ],
+      "regulatory_context": {
+        "regulator": "National Credit Union Administration Board",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-08-29",
+        "effective_date": "2025-08-29",
+        "compliance_deadline": null,
+        "source_url": "https://ncua.gov/news/enforcement-actions/administrative-orders/2025/administrative-order-matter-jennifer-lynn-hunt-tatman"
+      },
+      "situation": "NCUAB issued a consent prohibition order against Jennifer Lynn Hunt Tatman, barring her from participating in the affairs of insured depository institutions due to misconduct during her employment as head teller and loan manager. The order prohibits her from serving in any capacity at covered financial institutions until written consent is obtained from NCUAB.",
+      "agent_task": "The agent must identify the prohibition requirements and determine what actions credit unions must take to ensure compliance with the enforcement order.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Institutions must ensure enforcement of prohibition order against Jennifer Lynn Hunt Tatman",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "prohibition order against Jennifer Lynn Hunt Tatman",
+          "applies to insured depository institutions",
+          "effective immediately"
+        ],
+        "must_act_on": [
+          "process_change"
+        ],
+        "must_not_miss": [
+          "prohibition enforcement requirement",
+          "covered institution restrictions"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Legal prohibition from participation in insured depository institutions with potential future enforcement actions if violations occur."
+      },
+      "metadata": {
+        "source_artifact_id": "cf95ec5d-03b2-42d6-be02-29e3fc39c0be",
+        "generated_at": "2026-03-22T16:07:39.364199+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "68a76781-e612-4960-a6c1-9d078c400388",
+      "title": "ENISA International Cooperation Strategy Implementation",
+      "difficulty": "medium",
+      "tags": [
+        "ENISA",
+        "international_cooperation",
+        "cybersecurity",
+        "EU_policy",
+        "capacity_building"
+      ],
+      "regulatory_context": {
+        "regulator": "ENISA",
+        "jurisdiction": [
+          "EU",
+          "MD",
+          "UA"
+        ],
+        "update_type": "guidance",
+        "published_date": "2024-07-01",
+        "effective_date": null,
+        "compliance_deadline": "2026-03-01",
+        "source_url": "https://www.enisa.europa.eu/about-enisa/international-cooperation"
+      },
+      "situation": "ENISA has established and expanded international cooperation through working arrangements and partnership programs with strategic partners including CISA, Ukraine, and EU candidate countries, and now manages the EU Cybersecurity Reserve. Organizations must align with this international cooperation strategy to maintain access to EU cybersecurity resources and partnerships.",
+      "agent_task": "Determine what policy, process, and technical changes are required to comply with ENISA's international cooperation framework and avoid reputational damage or loss of access to EU cybersecurity partnerships.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Adopt and align with ENISA's international cooperation strategy and working arrangements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes for international information and knowledge exchange and capacity building initiatives",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Report and coordinate with ENISA regarding participation in the Cyber Partnership Programme and Cybersecurity Reserve",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to support information exchange and situational awareness as part of the Cyber Partnership Programme",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "March 2026 capacity building deadline",
+          "EU Cybersecurity Reserve management",
+          "Cyber Partnership Programme requirements"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2026-03-01 compliance deadline",
+          "reputational damage and loss of access consequences"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2026-03-01",
+        "penalty_summary": "Potential reputational damage and loss of access to EU cybersecurity resources and partnerships if non-compliant with cooperation frameworks."
+      },
+      "metadata": {
+        "source_artifact_id": "68a76781-e612-4960-a6c1-9d078c400388",
+        "generated_at": "2026-03-22T16:07:51.344487+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "0e7c2d3f-dfa2-4f8e-b3b2-31604494b2f8",
+      "title": "Multi-state enforcement order requires immediate money transmission cessation",
+      "difficulty": "medium",
+      "tags": [
+        "money_transmission",
+        "enforcement",
+        "multi_state",
+        "cease_and_desist",
+        "financial_distress",
+        "winddown"
+      ],
+      "regulatory_context": {
+        "regulator": "Idaho Department of Finance (multi-state coordinated)",
+        "jurisdiction": [
+          "US-AL",
+          "US-AK",
+          "US-AZ",
+          "US-AR",
+          "US-CO",
+          "US-GA",
+          "US-HI",
+          "US-ID",
+          "US-IL",
+          "US-IN",
+          "US-IA",
+          "US-ME",
+          "US-MD",
+          "US-MI",
+          "US-MN",
+          "US-MS",
+          "US-NE",
+          "US-NV",
+          "US-NH",
+          "US-NJ",
+          "US-NM",
+          "US-NC",
+          "US-ND",
+          "US-OH",
+          "US-OK",
+          "US-OR",
+          "US-RI",
+          "US-SC",
+          "US-SD",
+          "US-TN",
+          "US-TX",
+          "US-UT",
+          "US-VT",
+          "US-WA",
+          "US-WV",
+          "US-WI",
+          "US-KY",
+          "US-MA",
+          "US-PA",
+          "PR",
+          "DC"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2024-03-21",
+        "effective_date": "2024-03-21",
+        "compliance_deadline": "2024-03-31",
+        "source_url": "https://www.finance.idaho.gov/administrative-actio/sigue-corporation-2/"
+      },
+      "situation": "Multi-state regulators have issued an interim consent order requiring Sigue Corporation to immediately cease all money transmission activities due to deteriorating financial condition and inability to meet outstanding liabilities. The company must now implement winddown procedures while preserving records and cooperating with regulatory investigations.",
+      "agent_task": "The agent must identify all required compliance actions and immediate operational changes required under the enforcement order. The agent must determine reporting obligations and establish processes for regulatory cooperation during the winddown period.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement winddown procedures and ensure preservation and timely access to all books and records",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Provide timely and comprehensive responses to regulator information requests and bond claim documentation within 10 calendar days",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Maintain and preserve all transactional and operational data for regulator access and bond claim support",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "acknowledge",
+          "description": "Voluntarily consent to the Interim Order and waive rights to hearing or appeal related to this order",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2024-03-21 effective date",
+          "10 calendar day deadline for bond claim information",
+          "39 participating US states plus DC and Puerto Rico"
+        ],
+        "must_act_on": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "acknowledge"
+        ],
+        "must_not_miss": [
+          "2024-03-31 compliance deadline",
+          "potential license suspension or revocation consequences"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "acknowledge"
+        ],
+        "key_deadline": "2024-03-31",
+        "penalty_summary": "Potential suspension or revocation of money transmitter licenses by state regulators and enforcement actions by multiple state regulatory agencies."
+      },
+      "metadata": {
+        "source_artifact_id": "0e7c2d3f-dfa2-4f8e-b3b2-31604494b2f8",
+        "generated_at": "2026-03-22T16:08:01.464943+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "568ac09e-5bfb-4a53-8eec-cd6048739cf9",
+      "title": "FHLBank Authority Limitation on Derivative Product Offerings",
+      "difficulty": "easy",
+      "tags": [
+        "derivative_instruments",
+        "fhlbank",
+        "financial_management_policy",
+        "regulatory_authority"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Housing Finance Board",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "other",
+        "published_date": "1994-12-08",
+        "effective_date": "1993-12-15",
+        "compliance_deadline": null,
+        "source_url": "https://www.fhfa.gov/sites/default/files/2023-03/1995-gc-01.pdf"
+      },
+      "situation": "The Federal Housing Finance Board clarified that the Financial Management Policy (FMP) does not authorize FHLBanks to offer caps, collars, and floors to members for asset/liability management - only swaps are permitted. The Finance Board acting without a quorum cannot amend the FMP to grant such authority.",
+      "agent_task": "The agent must assess compliance implications and implement necessary controls to prevent unauthorized derivative product offerings to members.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Confirm no unauthorized changes to FMP regarding derivative authority without proper quorum",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement internal controls to prevent offering unauthorized caps, collars, and floors to members",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train relevant staff on limitations of FHLBanks' authority under the FMP",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to distinguish between permissible swaps and non-permissible caps, collars, and floors for member transactions",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "FHLBanks cannot offer caps, collars, and floors to members",
+          "Only swaps are authorized for member asset/liability management",
+          "Finance Board without quorum cannot amend FMP"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "Potential legal consequences for unauthorized offerings",
+          "Possible transaction invalidation"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Potential legal and regulatory consequences including reputational risk and possible invalidation of unauthorized transactions."
+      },
+      "metadata": {
+        "source_artifact_id": "568ac09e-5bfb-4a53-8eec-cd6048739cf9",
+        "generated_at": "2026-03-22T16:08:17.899019+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "03513cba-c9ab-41e1-9ca9-88f72e3a9576",
+      "title": "FCC Upper C-Band Comment Period Extension - Deadline Management",
+      "difficulty": "medium",
+      "tags": [
+        "FCC",
+        "spectrum",
+        "comment-period",
+        "deadline-extension",
+        "wireless",
+        "upper-c-band"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Communications Commission",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2025-12-19",
+        "effective_date": null,
+        "compliance_deadline": "2026-01-20",
+        "source_url": "https://www.fcc.gov/document/wtb-extends-comment-cycle-upper-c-band-proceeding"
+      },
+      "situation": "The FCC Wireless Telecommunications Bureau granted a 15-day extension for filing comments and reply comments on the Upper C-Band NPRM, moving deadlines to January 20, 2026, and February 18, 2026, respectively. This extension affects stakeholders involved in Upper C-band spectrum services who need to submit regulatory comments to influence rulemaking outcomes.",
+      "agent_task": "The agent must identify the new comment deadlines and update internal processes to ensure timely submission of comments and reply comments for the Upper C-Band proceeding.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update comment and reply comment deadlines for the Upper C-Band NPRM to January 20, 2026 and February 18, 2026",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Adjust internal comment preparation and submission schedules to meet new deadlines",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submit comments and reply comments by extended deadlines",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "January 20, 2026 comment deadline",
+          "February 18, 2026 reply comment deadline",
+          "15-day extension period"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change"
+        ],
+        "must_not_miss": [
+          "2026-01-20",
+          "exclusion from rulemaking record for missed deadlines"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change"
+        ],
+        "key_deadline": "2026-01-20",
+        "penalty_summary": "Failure to submit comments by extended deadlines may result in exclusion from the rulemaking record and loss of opportunity to influence regulatory outcomes."
+      },
+      "metadata": {
+        "source_artifact_id": "03513cba-c9ab-41e1-9ca9-88f72e3a9576",
+        "generated_at": "2026-03-22T16:08:31.997315+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "6e6b73c6-c84d-4cce-bb9f-f4a8280247d4",
+      "title": "Panama Banking Authority Approves ALLBANK Liquidation Office Move",
+      "difficulty": "easy",
+      "tags": [
+        "forced_liquidation",
+        "office_relocation",
+        "banking_authorization",
+        "panama",
+        "operational_compliance"
+      ],
+      "regulatory_context": {
+        "regulator": "Superintendencia de Bancos de Panamá",
+        "jurisdiction": [
+          "PA"
+        ],
+        "update_type": "bulletin",
+        "published_date": "2025-08-27",
+        "effective_date": "2025-09-01",
+        "compliance_deadline": null,
+        "source_url": "https://www.superbancos.gob.pa/documentos/leyes_y_regulaciones/resolucion/2025/Resolucion_2025-00535.pdf"
+      },
+      "situation": "The Panamanian banking authority has authorized ALLBANK, CORP., which is in forced liquidation, to relocate its liquidation offices within the same building in Panama City. This relocation is part of the formal liquidation process and requires regulatory oversight to maintain compliance with banking law.",
+      "agent_task": "Determine what process changes must be implemented and ensure the bank's liquidation team complies with the authorized office relocation.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Implement office relocation as authorized",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "effective_date",
+          "authorization_requirement"
+        ],
+        "must_act_on": [
+          "process_change"
+        ],
+        "must_not_miss": [
+          "2025-09-01 effective date",
+          "regulatory sanctions for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change"
+        ],
+        "key_deadline": "2025-09-01",
+        "penalty_summary": "Non-compliance with the authorization may result in regulatory sanctions under the Banking Law."
+      },
+      "metadata": {
+        "source_artifact_id": "6e6b73c6-c84d-4cce-bb9f-f4a8280247d4",
+        "generated_at": "2026-03-22T16:08:49.609277+00:00",
+        "language": [
+          "es"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "0b32c36e-fc47-4a99-b59e-aa1d3f44b039",
+      "title": "TX Securities Board Rule Review - Comment Period Open",
+      "difficulty": "easy",
+      "tags": [
+        "rule_review",
+        "securities",
+        "texas",
+        "comment_period",
+        "registration_exemptions"
+      ],
+      "regulatory_context": {
+        "regulator": "Texas State Securities Board",
+        "jurisdiction": [
+          "US-TX"
+        ],
+        "update_type": "comment request",
+        "published_date": "2023-09-01",
+        "effective_date": null,
+        "compliance_deadline": "2023-10-01",
+        "source_url": "https://www.ssb.texas.gov/texas-securities-act-board-rules/rule-review/intended-rule-review-september-2023"
+      },
+      "situation": "The Texas State Securities Board has initiated a mandatory four-year review of securities rules Chapters 109, 111, and 139 covering exemptions from registration. A 30-day public comment period is open to gather stakeholder feedback before any rule changes are proposed.",
+      "agent_task": "Determine if the company should participate in the comment period and monitor the rule review process for potential future compliance impacts.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Monitor rule review progress and prepare to respond to proposed changes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "acknowledge",
+          "description": "Submit comments or suggestions within the 30-day comment period if desired",
+          "is_mandatory": false
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "30-day comment deadline",
+          "Chapters 109, 111, and 139 under review",
+          "exemptions from registration focus"
+        ],
+        "must_act_on": [
+          "process_change"
+        ],
+        "must_not_miss": [
+          "2023-10-01 comment deadline",
+          "potential future enforcement actions for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change"
+        ],
+        "key_deadline": "2023-10-01",
+        "penalty_summary": "Non-compliance with any future adopted changes could lead to regulatory enforcement actions including fines and reputational damage."
+      },
+      "metadata": {
+        "source_artifact_id": "0b32c36e-fc47-4a99-b59e-aa1d3f44b039",
+        "generated_at": "2026-03-22T16:09:03.330493+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "0b68bc12-fa18-4234-b7f3-3f3e25395732",
+      "title": "FDA Warning Letter for Unapproved COVID-19 Antiseptic Claims",
+      "difficulty": "hard",
+      "tags": [
+        "FDA",
+        "warning_letter",
+        "COVID-19",
+        "unapproved_drug",
+        "antiseptic",
+        "labeling",
+        "enforcement"
+      ],
+      "regulatory_context": {
+        "regulator": "Food and Drug Administration",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2021-12-29",
+        "effective_date": null,
+        "compliance_deadline": "2021-12-31",
+        "source_url": "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/varigard-llc-616757-12292021"
+      },
+      "situation": "FDA issued a warning letter to Varigard LLC identifying their alcohol-based topical antiseptic products as unapproved new drugs with unauthorized COVID-19 claims and labeling violations. The products were found to have misleading claims about COVID-19 treatment and prevention, along with unauthorized use of FDA logos.",
+      "agent_task": "The compliance agent must assess the immediate compliance requirements from this FDA warning letter and determine what actions must be taken within the specified timeframe to avoid enforcement actions.",
+      "required_actions": [
+        {
+          "action_type": "process_change",
+          "description": "Immediately cease sale of unapproved products with unauthorized COVID-19 claims",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "policy_change",
+          "description": "Revise product labeling and promotional materials to remove false claims and unauthorized FDA logos",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Submit corrective action report to FDA within 48 hours detailing specific actions taken",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update website and digital content to remove unauthorized claims and FDA logos",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "48 hour reporting deadline",
+          "immediate cessation requirement",
+          "legal enforcement risks"
+        ],
+        "must_act_on": [
+          "process_change",
+          "policy_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "2021-12-31 compliance deadline",
+          "seizure and injunction penalties"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "process_change",
+          "policy_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2021-12-31",
+        "penalty_summary": "Legal actions including seizure and injunction, reputational damage from public FDA warning letter, and potential financial penalties."
+      },
+      "metadata": {
+        "source_artifact_id": "0b68bc12-fa18-4234-b7f3-3f3e25395732",
+        "generated_at": "2026-03-22T16:09:17.666243+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "81dc8be0-9b5c-4753-ada9-3fda9cc3f960",
+      "title": "FINTRAC $177M Penalty for AML Violations - Compliance Response",
+      "difficulty": "hard",
+      "tags": [
+        "Administrative Monetary Penalty",
+        "FINTRAC",
+        "Money Laundering",
+        "Virtual Currency",
+        "Suspicious Transaction Reporting",
+        "Compliance",
+        "Enforcement"
+      ],
+      "regulatory_context": {
+        "regulator": "Financial Transactions and Reports Analysis Centre of Canada",
+        "jurisdiction": [
+          "CA"
+        ],
+        "update_type": "enforcement",
+        "published_date": "2025-10-22",
+        "effective_date": "2025-10-16",
+        "compliance_deadline": null,
+        "source_url": "https://fintrac-canafe.canada.ca/new-neuf/nr/2025-10-22-eng"
+      },
+      "situation": "FINTRAC imposed a $176.96M administrative monetary penalty on Xeltox Enterprises Ltd. for multiple AML compliance failures including inadequate suspicious transaction reporting, non-compliance with Ministerial Directives, and insufficient risk assessment procedures. The violations occurred between July 1-31, 2024 and involved serious criminal activities including trafficking in child sexual abuse material, fraud, ransomware payments, and sanctions evasion.",
+      "agent_task": "Determine what immediate compliance actions your organization must take to avoid similar penalties and ensure full compliance with FINTRAC requirements for virtual currency businesses.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update and maintain written compliance policies and procedures approved by senior officers",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes to assess and document risks and to notify prescribed application changes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Enhance suspicious transaction reporting and virtual currency transaction reporting processes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Upgrade systems to capture and report required transaction data accurately and timely",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "$176,960,190 penalty amount",
+          "violations occurred July 1-31, 2024",
+          "effective date of October 16, 2025"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "$176,960,190 penalty amount",
+          "suspicious transaction reporting requirements",
+          "virtual currency transaction reporting of $10,000+"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Administrative monetary penalty of $176,960,190 imposed for non-compliance with potential reputational damage due to association with serious violations."
+      },
+      "metadata": {
+        "source_artifact_id": "81dc8be0-9b5c-4753-ada9-3fda9cc3f960",
+        "generated_at": "2026-03-22T16:09:35.005597+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 9
+      }
+    },
+    {
+      "scenario_id": "e6b657d5-2d50-4a72-931f-5f8b023079e7",
+      "title": "FDIC Special Assessment Rate Reduction and Offset Procedures",
+      "difficulty": "hard",
+      "tags": [
+        "Special Assessment",
+        "Deposit Insurance Fund",
+        "FDIC",
+        "Banking Regulation",
+        "Loss Recovery"
+      ],
+      "regulatory_context": {
+        "regulator": "Federal Deposit Insurance Corporation",
+        "jurisdiction": [
+          "US"
+        ],
+        "update_type": "interim final rule",
+        "published_date": "2025-12-16",
+        "effective_date": null,
+        "compliance_deadline": "2026-03-30",
+        "source_url": "https://www.fdic.gov/news/press-releases/2025/fdic-board-directors-issues-interim-final-rule-amend-collection-special"
+      },
+      "situation": "The FDIC has issued an interim final rule reducing the special assessment rate for the eighth collection quarter from 3.36 to 2.97 basis points to recover Silicon Valley Bank and Signature Bank losses. The rule also establishes offset procedures for regular deposit insurance assessments if collections exceed actual losses after litigation resolution.",
+      "agent_task": "Determine required system updates, process changes, and compliance actions to implement the reduced special assessment rate and new offset procedures by the March 30, 2026 payment deadline.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Adopt interim final rule amendments to special assessment collection procedures",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Adjust special assessment collection rate for eighth quarter and implement offset procedures post-litigation and receivership termination",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Update systems to calculate reduced special assessment rate and apply offsets to regular deposit insurance assessments as required",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Monitor and report special assessment collections and offsets accurately in regulatory filings",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "2026-03-30 payment deadline",
+          "Rate reduction from 3.36 to 2.97 basis points",
+          "Offset procedures for excess collections"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "reporting_change"
+        ],
+        "must_not_miss": [
+          "2026-03-30 compliance deadline",
+          "Financial penalties for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "tech_data_change",
+          "reporting_change"
+        ],
+        "key_deadline": "2026-03-30",
+        "penalty_summary": "Non-compliance may result in financial penalties and reputational damage due to failure to meet statutory loss recovery requirements."
+      },
+      "metadata": {
+        "source_artifact_id": "e6b657d5-2d50-4a72-931f-5f8b023079e7",
+        "generated_at": "2026-03-22T16:09:51.251905+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "f255b93a-274b-4c73-8bf9-790100bd0941",
+      "title": "ASC Adopts 7-Year Record Retention and Court Reference Updates",
+      "difficulty": "medium",
+      "tags": [
+        "Record Keeping",
+        "Books and Records",
+        "Alberta Securities Commission",
+        "ASC Rules",
+        "Court of King's Bench",
+        "Compliance"
+      ],
+      "regulatory_context": {
+        "regulator": "Alberta Securities Commission",
+        "jurisdiction": [
+          "CA-AB"
+        ],
+        "update_type": "final rule",
+        "published_date": "2025-09-30",
+        "effective_date": "2025-10-31",
+        "compliance_deadline": null,
+        "source_url": "https://www.asc.ca/en/securities-law-and-policy/-/media/C1AF4834E20D473EB1CABB2701D10DE0.ashx"
+      },
+      "situation": "The Alberta Securities Commission has finalized amendments to ASC Rules requiring a mandatory 7-year record retention period and updating legal references from 'Court of Queen's Bench' to 'Court of King's Bench'. These changes take effect October 31, 2025, requiring compliance teams to update policies and systems before the deadline.",
+      "agent_task": "The agent must identify all required policy updates, system changes, and staff training needed to comply with the new 7-year record retention requirement and updated legal terminology.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Update internal policies to reflect 7-year record retention and new legal references",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement processes to retain records for 7 years and provide them in regulator-readable formats",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Train staff on updated summons procedures and terminology changes",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Modify data storage systems to ensure records are kept for 7 years in durable, safe formats accessible to regulators",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "7-year record retention requirement",
+          "effective date October 31, 2025",
+          "Court terminology updates"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "must_not_miss": [
+          "effective date",
+          "7-year retention period",
+          "court reference updates"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "training_change",
+          "tech_data_change"
+        ],
+        "key_deadline": "2025-10-31",
+        "penalty_summary": "Liability to punishment by the Court of King's Bench for failure to attend examinations or produce documents without lawful excuse."
+      },
+      "metadata": {
+        "source_artifact_id": "f255b93a-274b-4c73-8bf9-790100bd0941",
+        "generated_at": "2026-03-22T16:10:04.400067+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    },
+    {
+      "scenario_id": "98d5501d-b858-47a5-9b43-dd64a81c6151",
+      "title": "Thailand Securities and Exchange Act B.E. 2535 Implementation",
+      "difficulty": "medium",
+      "tags": [
+        "securities-regulation",
+        "thailand",
+        "licensing",
+        "compliance",
+        "market-supervision"
+      ],
+      "regulatory_context": {
+        "regulator": "The Securities and Exchange Commission, Thailand",
+        "jurisdiction": [
+          "TH"
+        ],
+        "update_type": "other",
+        "published_date": "1992-03-16",
+        "effective_date": null,
+        "compliance_deadline": null,
+        "source_url": "https://web-invpublic.sec.or.th/e/3545/2568"
+      },
+      "situation": "The Securities and Exchange Act B.E. 2535 (1992) has been enacted to establish the legal framework for securities regulation in Thailand, including licensing requirements for securities businesses and SEC oversight authority. Securities companies must now comply with new licensing, reporting, and operational requirements under SEC supervision.",
+      "agent_task": "Determine the compliance actions required for a securities business to operate legally under the new Thai Securities and Exchange Act and establish ongoing regulatory compliance.",
+      "required_actions": [
+        {
+          "action_type": "policy_change",
+          "description": "Adopt SEC rules and regulations as issued under the Securities and Exchange Act",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "process_change",
+          "description": "Implement licensing, approval, and reporting procedures as required by the Act",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "reporting_change",
+          "description": "Establish obligation to submit financial and operational reports to SEC",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "tech_data_change",
+          "description": "Implement systems to support compliance with licensing, reporting, and regulatory requirements",
+          "is_mandatory": true
+        },
+        {
+          "action_type": "training_change",
+          "description": "Provide training on new regulatory requirements and compliance obligations",
+          "is_mandatory": true
+        }
+      ],
+      "validation": {
+        "must_identify": [
+          "licensing requirements",
+          "SEC oversight authority",
+          "reporting obligations"
+        ],
+        "must_act_on": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "training_change"
+        ],
+        "must_not_miss": [
+          "licensing requirement",
+          "legal penalties for operating without license",
+          "refusal or revocation of license for non-compliance"
+        ]
+      },
+      "ground_truth": {
+        "correct_action_types": [
+          "policy_change",
+          "process_change",
+          "reporting_change",
+          "tech_data_change",
+          "training_change"
+        ],
+        "key_deadline": null,
+        "penalty_summary": "Legal penalties for operating without license and potential refusal or revocation of license for non-compliance."
+      },
+      "metadata": {
+        "source_artifact_id": "98d5501d-b858-47a5-9b43-dd64a81c6151",
+        "generated_at": "2026-03-22T16:10:20.844964+00:00",
+        "language": [
+          "en"
+        ],
+        "quality_score": 8
+      }
+    }
+  ]
+}
