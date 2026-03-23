@@ -10,10 +10,11 @@ RAB turns annotated regulatory updates into dynamic compliance scenarios — tes
 
 ## Why this exists
 
-Most agent benchmarks use static, synthetic tasks. Regulatory compliance is neither.  
-Rules change on specific dates. Deadlines cascade. Jurisdictions conflict. Penalties are real.
+I've spent years watching compliance teams get buried under regulatory updates. Not because they don't care — they do — but because the volume is impossible. Hundreds of regulators, dozens of jurisdictions, updates arriving daily in five different languages with different calendar systems and different ideas about what a "deadline" means.
 
-RAB evaluates agents on scenarios derived from **real regulatory updates** across hundreds of global regulators — grounded in structured annotations that encode what changed, what action is required, by when, and what happens if you miss it.
+When AI agents started getting serious, the question I kept coming back to wasn't "can they read regulations?" — language models are already good at that. The real question is whether they can *respond* correctly: identify what changed, determine what your organisation needs to do, and surface the facts that actually matter to the people who have to act on it. That's a much harder problem, and as far as I could tell, nobody had actually measured it against real regulatory data.
+
+So I built this. RAB uses real annotated regulatory updates — not synthetic scenarios, not toy examples — to evaluate whether AI agents can complete the compliance response loop from reading an update to taking the right action.
 
 ---
 
@@ -21,48 +22,20 @@ RAB evaluates agents on scenarios derived from **real regulatory updates** acros
 
 Benchmarked across 50 scenarios from 30+ regulators across APAC, EMEA, LATAM, and North America.
 
-Full benchmark results: [results/summary.txt](results/summary.txt)
+📊 **[View full benchmark results → results/summary.pdf](results/summary.pdf)**
 
-### Aggregate scores
+The slide deck covers aggregate scores, pass rates by difficulty, the universal `tech_data_change` blind spot, consensus failures across all models, and key observations about where human oversight remains essential.
 
-| Model | Pass% | Pass+Partial% | Action Cov | Fact Extr | Deadline Acc |
-|---|---|---|---|---|---|
-| gpt-5-mini | 74% | 98% | 94% | 33% | 96% |
-| gpt-5.4 | 64% | 96% | 87% | 31% | 98% |
-| gpt-5.4-mini | 48% | 94% | 82% | 26% | 98% |
+---
 
-### Pass rate by difficulty
+## Data & reproducibility
 
-| Model | Easy (15) | Medium (17) | Hard (18) |
-|---|---|---|---|
-| gpt-5-mini | 67% | 59% | **94%** |
-| gpt-5.4 | 67% | 59% | 67% |
-| gpt-5.4-mini | 47% | 35% | 61% |
+The sample scenarios in this repository are derived from a private regulatory intelligence dataset maintained by [Carver](https://carveragents.ai) and shared here with permission for reproducibility of the benchmark results.
 
-### Most missed action types (all models)
+- **[are_scenarios/sample-artifacts.json](are_scenarios/sample-artifacts.json)** — 50 raw annotated regulatory artifacts (selected from 100K+ across 700 regulators), showing the input data structure before scenario generation.
+- **[are_scenarios/sample-scenarios.json](are_scenarios/sample-scenarios.json)** — the same 50 artifacts converted into simulation scenarios, showing the output of the scenario generation step.
 
-| Action type | gpt-5.4 | gpt-5.4-mini | gpt-5-mini |
-|---|---|---|---|
-| tech_data_change | 12% | 16% | 10% |
-| policy_change | 10% | 10% | — |
-| reporting_change | 8% | 10% | — |
-| other_change | 6% | 6% | 6% |
-
-### What the results show
-
-**The headline pass rates are only part of the story.** All three models score 94–98% on Pass+Partial, meaning they almost always get *something* right. The real differentiation is in how completely they respond.
-
-**Deadline accuracy is a solved problem** (96–98% across all models). Agents reliably identify compliance dates. This is no longer a meaningful differentiator.
-
-**Fact extraction is the unsolved problem** (26–33% across all models). Agents understand that action is needed but consistently fail to surface the specific facts a compliance team requires — penalty amounts, registration consequences, downstream system requirements. A response that identifies the right action type but omits the penalty detail is operationally useless.
-
-**`tech_data_change` is the universal blind spot.** Every model misses it most often. Agents understand the policy intent of a regulatory change but consistently fail to identify its downstream implications for systems and data. This is the gap between reading a regulation and understanding what it means for your infrastructure.
-
-**The CMA Auditor Registration scenario failed all three models** — the only consensus failure. The critical misses (`registration_expiry_consequences`, `database_update_requirement`) reveal a specific pattern: when consequences are implicit in the regulatory context rather than stated explicitly in the update, all models fail to surface them.
-
-**gpt-5-mini's hard scenario performance (94%) looks strong but is partly an artifact of decisiveness.** It passed 9 of the 11 "only one model passed" scenarios — but in each case it was the *only* model that passed, meaning it commits to answers more readily rather than being consistently more accurate. On easy scenarios it performs identically to gpt-5.4 (67%).
-
-**10 scenarios had no model fully pass** — these are the most valuable for understanding agent capability limits. They cluster around scenarios requiring multi-step implicit reasoning: connecting a regulatory change to its operational consequences, not just its stated requirements.
+> **Note on `process.py`:** The selection and scenario generation pipeline is not included in this repository. It assumes access to a private repository of regulatory annotations in the Carver annotation format. If you have your own regulatory annotation pipeline, you can implement the same two-step interface: a `select` command that filters annotations for simulation quality, and a `scenarios` command that converts them to the scenario format described below.
 
 ---
 
@@ -75,13 +48,45 @@ Regulatory annotations  →  process.py select    →  selected_artifacts.json
                         →  run_simulation.py compare → side-by-side report
 ```
 
-1. **`process.py select`** filters 100K+ raw annotations down to high-signal simulation candidates — artifacts with clear actionables, compliance dates, and defined consequences. Stratified across impact × urgency × geography to avoid regional bias.
+1. **`process.py select`** *(not included — requires private annotation data)* filters raw annotations down to high-signal simulation candidates — artifacts with clear actionables, compliance dates, and defined consequences. Stratified across impact × urgency × geography to avoid regional bias.
 
-2. **`process.py scenarios`** calls an LLM to convert each annotation into a structured scenario with `required_actions`, `validation`, and `ground_truth`.
+2. **`process.py scenarios`** *(not included)* calls an LLM to convert each annotation into a structured scenario with `required_actions`, `validation`, and `ground_truth`.
 
 3. **`run_simulation.py run`** runs a single model against the scenario set via LiteLLM — works with OpenAI, Anthropic, Mistral, Llama, and any other LiteLLM-supported provider.
 
-4. **`run_simulation.py compare`** produces a side-by-side report including consensus failure analysis: scenarios where all models failed, no model fully passed, or only one model passed.
+4. **`run_simulation.py compare`** produces a side-by-side report including consensus failure analysis.
+
+---
+
+## Quick start
+
+```bash
+# 1. Clone and install
+git clone https://github.com/carveragents/RegulatoryAgentBench
+cd RegulatoryAgentBench
+pip install -r requirements.txt
+
+# 2. Configure
+cp example.env .env   # add your API key(s)
+
+# 3. Run against the sample scenarios
+python run_simulation.py run \
+  --scenarios are_scenarios/sample-scenarios.json \
+  --model gpt-5.4-mini-2026-03-17 \
+  --output results/gpt5mini.json
+
+# 4. Run another model
+python run_simulation.py run \
+  --scenarios are_scenarios/sample-scenarios.json \
+  --model claude-sonnet-4-20250514 \
+  --output results/claude.json
+
+# 5. Compare with consensus failure analysis
+python run_simulation.py compare \
+  --results results/gpt5mini.json \
+  --results results/claude.json \
+  --show-consensus-failures
+```
 
 ---
 
@@ -118,38 +123,6 @@ Each scenario in `are_scenarios.json` looks like:
 
 ---
 
-## Quick start
-
-```bash
-# 1. Clone and install
-git clone https://github.com/your-org/RegulatoryAgentBench
-cd RegulatoryAgentBench
-pip install -r requirements.txt
-
-# 2. Configure
-cp example.env .env   # add your API key(s)
-
-# 3. Run one model
-python run_simulation.py run \
-  --scenarios are_scenarios/scenarios.json \
-  --model gpt-5.4-mini-2026-03-17 \
-  --output results/gpt5mini.json
-
-# 4. Run another
-python run_simulation.py run \
-  --scenarios are_scenarios/scenarios.json \
-  --model claude-sonnet-4-20250514 \
-  --output results/claude.json
-
-# 5. Compare with consensus failure analysis
-python run_simulation.py compare \
-  --results results/gpt5mini.json \
-  --results results/claude.json \
-  --show-consensus-failures
-```
-
----
-
 ## Repository structure
 
 ```
@@ -161,8 +134,11 @@ RegulatoryAgentBench/
 │   │   └── loader.py                 # loads are_scenarios.json
 │   ├── scorer.py                     # validation + scoring logic
 │   └── __init__.py
-├── are_scenarios/                    # your scenario JSON files go here
-├── results/                          # simulation run outputs
+├── are_scenarios/
+│   ├── sample-artifacts.json         # 50 raw annotated regulatory artifacts
+│   └── sample-scenarios.json         # same 50 converted to simulation scenarios
+├── results/
+│   └── summary.pdf                   # benchmark results — 11-slide deck
 ├── tests/
 │   └── test_scorer.py
 ├── run_simulation.py                 # main entry point (run + compare)
@@ -175,8 +151,6 @@ RegulatoryAgentBench/
 ---
 
 ## Scoring
-
-Each scenario is scored on four dimensions:
 
 | Dimension | Description |
 |---|---|
@@ -209,15 +183,12 @@ MIT. See [LICENSE](LICENSE).
 
 ## Citation
 
-If you use RAB in your research:
-
 ```bibtex
 @misc{rab2026,
   title  = {RegulatoryAgentBench: Evaluating AI Agent Responses to Regulatory Change},
   year   = {2026},
-  url    = {https://github.com/your-org/RegulatoryAgentBench}
+  url    = {https://github.com/carveragents/RegulatoryAgentBench}
 }
 ```
 
 Inspired by [Meta ARE](https://arxiv.org/abs/2509.17158).
-
