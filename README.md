@@ -22,9 +22,9 @@ So I built this. RAB uses real annotated regulatory updates — not synthetic sc
 
 Benchmarked across 50 scenarios from 30+ regulators across APAC, EMEA, LATAM, and North America.
 
-📊 **[View full benchmark results → results/summary.pdf](results/summary.pdf)**
+![Benchmark Results](results/summary.gif)
 
-The slide deck covers aggregate scores, pass rates by difficulty, the universal `tech_data_change` blind spot, consensus failures across all models, and key observations about where human oversight remains essential.
+> Download: **[results/summary.pdf](results/summary.pdf)**
 
 ---
 
@@ -138,7 +138,8 @@ RegulatoryAgentBench/
 │   ├── sample-artifacts.json         # 50 raw annotated regulatory artifacts
 │   └── sample-scenarios.json         # same 50 converted to simulation scenarios
 ├── results/
-│   └── summary.pdf                   # benchmark results — 11-slide deck
+│   ├── summary.pdf                   # slide deck (download)
+│   └── summary.gif                   # animated preview (embedded in README)
 ├── tests/
 │   └── test_scorer.py
 ├── run_simulation.py                 # main entry point (run + compare)
